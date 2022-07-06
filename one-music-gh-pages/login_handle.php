@@ -15,13 +15,13 @@
         	if($row['email']===$email && $row['password']===$password){
         		$_SESSION['user_id']=$row['user_id'];
         		$_SESSION['fname']=$row['fname'];
-        		header("location:user/dashboard.php ");
+        		header("location:user/mainpage.php ");
         		exit();
         	}
 
         }
         else{
-        	echo ("error");
+        	echo ("error" .mysqli_connect_error());
         	// header("location : dashboard.php");
         	exit();
         }
@@ -34,7 +34,7 @@
         	if($row['email']===$email && $row['password']===$password){
         		$_SESSION['artist_id']=$row['artist_id'];
         		$_SESSION['name']=$row['artist_name'];
-        		header("location:artist/dashboard.php ");
+        		header("location:artist/mainpage.php ");
         		exit();
         	}
 

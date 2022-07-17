@@ -22,41 +22,41 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
     <style>
-.dropbtn {
-  background-color: none;
-  color:white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  opacity: 1;
-}
+        .dropbtn {
+        background-color: none;
+        color:white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        opacity: 1;
+        }
 
-.dropdown {
-  position: relative;
-}
+        .dropdown {
+        position: relative;
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
 
-.dropdown-content a:hover {}
+        .dropdown-content a:hover {}
 
-.dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {cursor:pointer;}
-</style>
+        .dropdown:hover .dropbtn {cursor:pointer;}
+    </style>
 
 </head>
 
@@ -105,10 +105,10 @@
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="albums-store.html">Albums</a></li>
-                                            <li><a href="event.html">Events</a></li>
-                                            <li><a href="blog.html">News</a></li>
+                                            <!-- <li><a href="event.html">Events</a></li>
+                                            <li><a href="blog.html">News</a></li> -->
                                             <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
+                                            <!-- <li><a href="elements.html">Elements</a></li> -->
                                             <li><a href="login.html">Login</a></li>
                                             <li><a href="#">Dropdown</a>
                                                 <ul class="dropdown">
@@ -129,8 +129,8 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="event.html">Events</a></li>
-                                    <li><a href="blog.html">News</a></li>
+                                    <!-- <li><a href="event.html">Events</a></li>
+                                    <li><a href="blog.html">News</a></li> -->
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
 
@@ -152,7 +152,7 @@
                                     <i class="fa fa-user-circle-o fa-2x" aria-hidden="true" style="color:white;"><span class="dropbtn "><?php echo $_SESSION['fname']?></span></i>
                                         
                                         <div class="dropdown-content">
-                                            <a href="dashboard.php">Profile</a>
+                                            <a href="profile.php">Profile</a>
                                             <a href="../logout.php">Log Out</a>
                                         </div>
                                         </div>

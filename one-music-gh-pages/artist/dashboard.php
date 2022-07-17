@@ -26,6 +26,7 @@
     ></script>
     <script src="../js/charts-lines.js" defer></script>
     <script src="../js/charts-pie.js" defer></script>
+    <link rel="stylesheet" href="../style.css"> 
   </head>
   <body>
     <div

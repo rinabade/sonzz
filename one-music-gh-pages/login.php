@@ -100,9 +100,11 @@
                                     <label for="exampleInputPassword1" style="font-size: 20px;">Password</label>
                                     <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn oneMusic-btn mt-30">Login</button> <br><br>
                                 
+                                <button type="submit" class="btn oneMusic-btn mt-30">Login</button> <br><br>
+                                <a href="forgetpass.php"><p> Forgot Password?</p></a><br>    
                             </form>
+                            
                             <h5 id="emailHelp" class="form-text text-muted"><i class="fa fa-lock mr-2"></i>Not registered? Register now!!!</h5>
                                 <a href="register.php"> <button type ="submit" class="btn oneMusic-btn mt-30" >Register</button> </a>
                         </div>

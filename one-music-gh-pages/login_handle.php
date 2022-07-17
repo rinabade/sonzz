@@ -41,7 +41,7 @@
         }
         else{
         	echo ("error");
-        	// header("location : dashboard.php");
+        	header("location:login.php");
         	exit();
         }
     }

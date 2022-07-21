@@ -1,6 +1,6 @@
 <?php 
   SESSION_start();
-  if(isset($_SESSION['user_id']) && isset($_SESSION['fname'])){
+  if(isset($_SESSION['artist_id']) && isset($_SESSION['name'])){
     include('../connection.php');
 ?>
 <!DOCTYPE html>
@@ -837,7 +837,7 @@
             <h2
               class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
             >
-              <?php echo $_SESSION['fname']?>'s Profile 
+              <?php echo $_SESSION['name']?>'s Profile 
             </h2>
           </div>
         </main>

@@ -18,27 +18,23 @@
         <div class="container d-flex justify-content-center">
             <div class="card p-3 py-4">
                 <div class="text-center"> 
-                <?php 
-                  include "../connection.php";
+                  
+                  <?php 
+                    include "../connection.php";
 
-                    $sql="SELECT * FROM user WHERE user_id='" . $id . "' ";
-                    $result = mysqli_query($conn, $sql);
-                    $row = mysqli_fetch_array($result);
-                    if($row['user_id']==$id){
-                      // echo base64_encode($row['image']) ;ss
-                      $img=$row['image'];
-                      echo '<img src="data:image;base64,'.$row['image'].'" class="rounded-circle" id="photo"> ';
-                ?>
-                <form action="edit.php" method="POST">
-                <div class="artist-img">
-                <!-- <img src="../images/pp.png" width="100" class="rounded-circle" id="photo"/> -->
-                <input type="file" id="file">
-                <label  for="file" id="uploadbtn"><i style="font-size:18px" class="fa">&#xf030;</i></label>
-                
-                </div>
-                </form>
-                    <h3 class="mt-2"><?php echo $fname;} ?></h3>
-                      <hr class="line">
+                      $sql="SELECT * FROM user WHERE user_id='" . $id . "' ";
+                      $result = mysqli_query($conn, $sql);
+                      $row = mysqli_fetch_array($result);
+                      if($row['user_id']==$id){
+                        // echo base64_encode($row['image']) ;
+                        $img=$row['image'];
+                        echo '<img src="data:image;base64,'.$row['image'].'" class="rounded-circle" id="photo"> ';
+                  ?>
+                  
+
+
+                  <h3 class="mt-2"><?php echo $fname;} ?></h3>
+                  <hr class="line">
         <div class="wrapper">
         <div class="right">
                       <a href="user_profile.php"><b>INFORMATION</b></a>
@@ -49,24 +45,24 @@
             <div class="info_data">
              
                <div class="data">
-                    <h4>Firstname: Aditi</h4>
+                    <h4>Firstname: <?php echo $row['fname']; ?></h4>
                </div>
                <br>
                  <div class="data">
-                   <h4>Lastname : Shrestha</h4>
+                   <h4>Lastname : <?php echo $row['lname']; ?></h4>
               </div>
                  <br>
                  <div class="data">
-                    <h4>Email: aditi@gmail.com</h4>
+                    <h4>Email: <?php echo $row['email']; ?></h4>
                     
                  </div>
-                 <br>
-                 <div class="data">
+                 
+                 <!-- <div class="data">
                    <h4>Phone: 9818035087</h4>
-              </div>
+              </div> -->
               <br>
               <div class="data">
-                   <h4>Address: Baneshwor</h4>
+                   <h4>Address: <?php echo $row['address']; ?></h4>
               </div>
               </div>
               </div>

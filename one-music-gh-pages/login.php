@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>One Music - Modern Music HTML5 Template</title>
+    <title>Sonzz</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -40,7 +40,7 @@
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="mainpage.php" class="nav-brand img1"><img src="img/core-img/l.png" alt="SONZZ"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -54,8 +54,27 @@
                             <div class="classycloseIcon">
                                 <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
                             </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="mainpage.php">Home</a></li>
+                                    <li><a href="artist.html">Artists</a></li>
+                                    <li><a href="pricing_table.php">Premium</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
 
-                         
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <!-- Login/Register -->
+                                    <div class="login-register-btn mr-50">
+                                        <a href="login.php" id="loginBtn">Login / Register</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>   
                     </nav>
                 </div>
             </div>
@@ -65,20 +84,18 @@
 
     <!-- ##### Breadcumb Area Start ##### -->
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
-        <div class="bradcumbContent">
-            <p>See what’s new</p>
-            <h2>Login</h2>
-        </div>
+    
+        
     </section>
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Login Area Start ##### -->
     <section class="login-area section-padding-100">
-        <div class="container">
+        <div class="container loginbg">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="login-content">
-                        <h3>Welcome</h3>
+                        <h3>Login</h3>
                         <!-- Login Form -->
                         <div class="login-form">
                             <form action="login_handle.php" method="POST">
@@ -101,12 +118,12 @@
                                     <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                                 </div>
                                 
-                                <button type="submit" class="btn oneMusic-btn mt-30">Login</button> <br><br>
+                                <button type="submit" class="btn oneMusic-btn loginbtn mt-30">Login</button> <br><br>
                                 <a href="forgetpass.php"><p> Forgot Password?</p></a><br>    
                             </form>
                             
                             <h5 id="emailHelp" class="form-text text-muted"><i class="fa fa-lock mr-2"></i>Not registered? Register now!!!</h5>
-                                <a href="register.php"> <button type ="submit" class="btn oneMusic-btn mt-30" >Register</button> </a>
+                                <a href="register.php"> <button type ="submit" class="btn oneMusic-btn loginbtn mt-30" >Register</button> </a>
                         </div>
                     </div>                   
                 </div>
@@ -120,9 +137,9 @@
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-12 col-md-6">
-                    <a href="#"><img src="img/core-img/logo.png" alt=""></a>
+                    <a href="mainpage.php" class="nav-brand">S0NZZ</a>
                     <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
 

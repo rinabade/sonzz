@@ -145,7 +145,7 @@
 <aside class="aside is-placed-left is-expanded">
   <div class="aside-tools">
     <div>
-      Admin <b class="font-black">One</b>
+      <b class="font-black">User</b>
     </div>
   </div>
   <div class="menu is-menu-main">
@@ -247,7 +247,7 @@
 <section class="is-title-bar">
   <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
     <ul>
-      <li>Admin</li>
+      <li>User</li>
       <li>Profile</li>
     </ul>
     <a href="https://justboil.me/" onclick="alert('Coming soon'); return false" target="_blank" class="button blue">

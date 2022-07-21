@@ -100,25 +100,23 @@
                         <div class="login-form">
                             <form action="login_handle.php" method="POST">
                             <div class="form-group">
-                                    <label for="exampleInputEmail1" style="font-size: 20px;">User Type</label><br>
-                                    <input id="1" type="radio" name="acc_type" value="user">
-                                    <label for="1" style="font-size: 20px;">User</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <input id="2" type="radio" name="acc_type" value="artist">
-                                    <label for="2" style="font-size: 20px;">Artist</label>
-                                   
-
+                                    <label for="exampleInputEmail1" style="font-size: 20px;"><?php if (isset($_GET['error1'])){?>
+                                            <p class="error"><?php echo $_GET['error1']; ?></p></label>
+                                        <?php } ?>
                                 </div>
+
                                 <div class="form-group">
                                     <label for="exampleInputEmail1" style="font-size: 20px;">Email address</label>
                                     <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-mail">
                                     <!-- <small id="emailHelp" class="form-text text-muted"><i class="fa fa-lock mr-2"></i>We'll never share your email with anyone else.</small> -->
                                 </div>
+
                                 <div class="form-group">
                                     <label for="exampleInputPassword1" style="font-size: 20px;">Password</label>
                                     <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                                 </div>
                                 
-                                <button type="submit" class="btn oneMusic-btn loginbtn mt-30">Login</button> <br><br>
+                                <button type="submit" name="submit" class="btn oneMusic-btn loginbtn mt-30">Login</button> <br><br>
                                 <a href="forgetpass.php"><p> Forgot Password?</p></a><br>    
                             </form>
                             

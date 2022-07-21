@@ -92,7 +92,7 @@
                         <h3>Forget Password?</h3>
                         <!-- Login Form -->
                         <div class="login-form">
-                            <form action="login_handle.php" method="POST">
+                            <form action="forgetpasshandle.php" method="POST">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1" style="font-size: 20px;">Email address</label>
                                     <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter E-mail">
@@ -105,10 +105,10 @@
 
                                 <div class="form-group">
                                     <label for="exampleInputPassword1" style="font-size: 20px;">Confirm Password</label>
-                                    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+                                    <input type="password" class="form-control" name="cpassword" id="exampleInputPassword1" placeholder="Password">
                                 </div>
                                 
-                                <button type="submit" class="btn oneMusic-btn loginbtn mt-30">Submit</button> <br><br>
+                                <button type="submit" name="submit" class="btn oneMusic-btn loginbtn mt-30">Submit</button> <br><br>
                                     
                             </form>
                         </div>

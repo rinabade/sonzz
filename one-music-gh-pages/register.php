@@ -97,43 +97,61 @@
                 <div class="col-12 col-lg-8">
                                         
                     <div class="resis-content">
-                        <h3>Register Now</h3>
+                        <h1 style="text-align:center;">Register Now</h1><br><br>
                         <!-- Login Form -->
+
                         <div class="login-form">
+                            
                             <form action="reg_handle.php" method="post">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">First Name</label>
+                                    <label for="exampleInputEmail1" style="font-size: 20px;">First Name</label>
                                     <input type="text" class="form-control" name="fname" aria-describedby="emailHelp" placeholder="Enter firstname">
                                     
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Last Name</label>
+                                    <label for="exampleInputEmail1" style="font-size: 20px;">Last Name</label>
                                     <input type="text" class="form-control" name="lname" aria-describedby="emailHelp" placeholder="Enter lastname">
                                     
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email</label>
+                                    <label for="exampleInputEmail1" style="font-size: 20px;">User Type</label><br>
+                                    <input id="1" type="radio" name="acc_type" value="user">
+                                    <label for="1" style="font-size: 20px;">User</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input id="2" type="radio" name="acc_type" value="artist">
+                                    <label for="2" style="font-size: 20px;">Artist</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" style="font-size: 20px;">Email</label>
                                     <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter E-mail">
                                     
                                 </div>
 
+                                
+
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
+                                    <label for="exampleInputPassword1" style="font-size: 20px;">Password</label>
                                     <input type="password" class="form-control" name="password" placeholder="Password">
                                 </div>
 
+                                <div>
+                                    <?php if (isset($_GET['error1'])){?>
+                                        <p class="error" style="font-size: 20px;"><?php echo $_GET['error1']; ?></p>
+                                    <?php } ?>
+                                </div>
+
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Confirm Password</label>
+                                    <label for="exampleInputPassword1" style="font-size: 20px;">Confirm Password</label>
                                     <input type="password" class="form-control" name="cpassword" placeholder="Password">
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Address</label>
+                                    <label for="exampleInputEmail1" style="font-size: 20px;">Address</label>
                                     <input type="text" class="form-control" name="address" aria-describedby="emailHelp" placeholder="Enter address">
                                     
                                 </div>
                                 
-                                <button type="submit" class="btn oneMusic-btn resisbtn mt-30">Register</button>
+                                <button type="submit" name="submit" class="btn oneMusic-btn resisbtn mt-30">Register</button>
                             </form>
                         </div>
                     </div>

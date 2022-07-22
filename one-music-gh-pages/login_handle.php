@@ -29,7 +29,7 @@
             $row=mysqli_fetch_assoc($result2);
             if($row['email']===$email && $row['password']===$pass){
                 $_SESSION['artist_id']=$row['artist_id'];
-                $_SESSION['name']=$row['artist_name'];
+                $_SESSION['name']=$row['first_name'];
                 header("location:artist/mainpage.php ");
                 exit();
             }

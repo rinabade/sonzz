@@ -24,7 +24,7 @@
 
             }
             if(mysqli_num_rows($result2)===1){
-                $sql="UPDATE artist set passsword='$password' where email='$email'";
+                $sql="UPDATE artist set password='$password' where email='$email'";
                 if(mysqli_query($conn,$sql)){
                     header("location:login.php?error1= Password changed!!");
                 }

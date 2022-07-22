@@ -269,7 +269,7 @@
 
   <section class="section main-section">
     <div> 
-      <iframe src="user.php" width="100%" height="900"> </iframe>
+      <iframe src="user.php" width="100%" height="1000"> </iframe>
     </div>
     
   </section>

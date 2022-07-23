@@ -27,7 +27,7 @@
     <header>
         <div class="menu_side">
         <div class="circle-frame">
-        <img class="profilepic" src="img/core-img/pp.jpg">
+        <img class="profilepic" src="img/core-img/l.png">
           </div>
         <div class="playlist">
         <h4 class="active"><span></span><i class="bi bi-house-door"></i>Home</h4>
@@ -36,7 +36,7 @@
         </div>
         <h5 class="yourmusic">Your Music</h5>
         <div class="playlist">
-                 <h4 class="active"><span></span><i class="bi bi-file-music"></i>Songs</h4>
+                 <h4 class="active"><span></span><a href="songs.php"><i class="bi bi-file-music"></i>Songs</a></h4>
                  <h4 class="active"><span></span><i class="bi bi-disc"></i>Albums</h4>
         </div>
         <div class="playlist">
@@ -56,7 +56,7 @@
             </nav>
             <div class= "content">
                 <h1><?php echo $_SESSION['name']?> <?php echo $_SESSION['lname']?></h1>
-                <p>bio</p>
+                <p>bio: </p>
                 <div class="buttons">
                     <button><h4>Followers: 20k</h4></button>
                 </div>

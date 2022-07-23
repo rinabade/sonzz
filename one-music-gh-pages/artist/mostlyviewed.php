@@ -22,7 +22,7 @@
     <header>
         <div class="menu_side">
         <div class="circle-frame">
-        <img class="profilepic" src="img/core-img/pp.jpg">
+        <img class="profilepic" src="img/core-img/l.png">
           </div>
         <div class="playlist">
         <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4>
@@ -31,7 +31,7 @@
         </div>
         <h5 class="yourmusic">Your Music</h5>
         <div class="playlist">
-                 <h4 class="active"><span></span><i class="bi bi-file-music"></i>Songs</h4>
+                 <h4 class="active"><span></span><a href="songs.php"><i class="bi bi-file-music"></i>Songs</a></h4>
                  <h4 class="active"><span></span><i class="bi bi-disc"></i>Albums</h4>
         </div>
         <div class="playlist">

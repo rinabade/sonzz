@@ -45,7 +45,7 @@
         </div>
         <h5 class="yourmusic">Your Music</h5>
         <div class="playlist">
-                 <h4 class="active"><span></span><i class="bi bi-file-music"></i>Songs</h4>
+                 <h4 class="active"><span></span><a href="songs.php"><i class="bi bi-file-music"></i>Songs</a></h4>
                  <h4 class="active"><span></span><i class="bi bi-disc"></i>Albums</h4>
         </div>
         <div class="playlist">
@@ -66,7 +66,7 @@
                 <label for="file" id="uploadbtn"><i style="font-size:18px" class="fa">&#xf030;</i></label>
                 </div>
                 
-                    <h3 class="mt-2"><?php echo $_SESSION['name']?> <?php echo $_SESSION['lname']?></h3>
+                    <h3 class="mt-2"><?php echo $row['first_name']?> <?php echo $row['last_name']?></h3>
                       <hr class="line">
 
                              
@@ -93,9 +93,12 @@
                  </div>
                  <br>
                  <div class="data">
-                   <h4>Bio: </h4>
+                   <h4>Bio:  <?php echo $row['bio']; ?></h4>
               </div>
               <br>
+              <div class="data">
+                   <h4>Address : <?php echo $row['address']; ?></h4>
+              </div>
               <div class="open">
                 <button class="button button1" onclick="openform()"> Change Information</button>
               </div>

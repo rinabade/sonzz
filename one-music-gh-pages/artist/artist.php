@@ -41,7 +41,7 @@
                  <h4 class="active"><span></span><i class="bi bi-disc"></i>Albums</h4>
         </div>
         <div class="playlist">
-                 <h4 class="active logout"><span></span><i class="bi bi-box-arrow-left"></i>Logout</h4>
+                 <h4 class="active logout"><span></span><a href="../logout.php"><i class="bi bi-box-arrow-left"></i>Logout</a></h4>
                  
         </div>
 
@@ -72,7 +72,7 @@
                 <div class="h4">
                     <h4>Popular songs</h4>
                     <div class="btn_s">
-                    <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                    <i id="left_scroll" onclick="click()"class="bi bi-arrow-left-short"></i>
                     <i id="right_scroll" class="bi bi-arrow-right-short"></i>
                     </div>
                  </div>

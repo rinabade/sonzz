@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2022 at 12:21 PM
+-- Generation Time: Jul 23, 2022 at 11:14 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.0
 
@@ -54,9 +54,11 @@ CREATE TABLE `album` (
 
 CREATE TABLE `artist` (
   `artist_id` int(50) NOT NULL,
-  `artist_name` varchar(50) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(100) NOT NULL,
+  `address` varchar(50) NOT NULL,
   `bio` varchar(500) NOT NULL,
   `picture` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -65,8 +67,9 @@ CREATE TABLE `artist` (
 -- Dumping data for table `artist`
 --
 
-INSERT INTO `artist` (`artist_id`, `artist_name`, `email`, `password`, `bio`, `picture`) VALUES
-(1, 'Kurt Cobain', 'kurt@gmail.com', 'cobain@123', 'hello i am kurt cobain', '');
+INSERT INTO `artist` (`artist_id`, `first_name`, `last_name`, `email`, `password`, `address`, `bio`, `picture`) VALUES
+(0, 'Rina', 'Bade', 'rina.bade@apexcollege.edu.np', '25d55ad283aa400af464c76d713c07ad', 'Thimi', '', 'images/IMG_2904.JPG'),
+(1, 'Kurt Cobain', '', 'kurt@gmail.com', 'cobain@123', '', 'hello i am kurt cobain', '');
 
 -- --------------------------------------------------------
 
@@ -160,22 +163,16 @@ CREATE TABLE `song` (
   `genre_id` int(50) NOT NULL,
   `song_title` varchar(100) NOT NULL,
   `duration` int(50) NOT NULL,
-  `song` text NOT NULL
+  `song` text NOT NULL,
+  `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `song`
 --
 
-INSERT INTO `song` (`song_id`, `artist_id`, `album_id`, `genre_id`, `song_title`, `duration`, `song`) VALUES
-(4, 1, 3, 3, 'aaaa', 45, 'http://localhost/Sonzz/one-music-gh-pages/uploads/parkhai.mp3'),
-(11, 1, 3, 3, 'b', 45, 'http://localhost/Sonzz/one-music-gh-pages/uploads/we_dont_talk_anymore.mp3'),
-(12, 1, 3, 3, 'd', 45, 'Sonzz/one-music-gh-pages/uploads/we_dont_talk_anymore.mp3'),
-(16, 1, 3, 3, 'nn', 45, 'uploads/BATASH Shashwot Khadka Prod by Sanjv Official Lyric Video.mp3'),
-(17, 1, 3, 3, 'sajjan', 45, 'uploads/Sajjan Raj Vaidya Chitthi Bhitra Official Release.mp3'),
-(19, 1, 3, 3, 'Dil Diyan', 45, 'uploads/Dil Diyan Gallan Full Song Tiger Zinda Hai Salman Khan Katrina Kaif Atif Aslam Vishal Shekhar.mp3'),
-(20, 1, 3, 3, 'ABCD', 45, 'uploads/Full Song Bezubaan Kab Se Street Dancer 3D Varun D Siddharth B Jubin N Sachin Jigar.mp3'),
-(21, 1, 3, 3, 'Bruno', 45, 'uploads/Bruno Mars Just The Way You Are Official Music Video.mp3');
+INSERT INTO `song` (`song_id`, `artist_id`, `album_id`, `genre_id`, `song_title`, `duration`, `song`, `image`) VALUES
+(23, 0, 3, 3, 'chitthi', 45, 'uploads/Sajjan Raj Vaidya Chitthi Bhitra Official Release.mp3', 'simages/rinkey.png');
 
 -- --------------------------------------------------------
 
@@ -187,7 +184,7 @@ CREATE TABLE `user` (
   `user_id` int(100) NOT NULL,
   `fname` varchar(50) NOT NULL,
   `lname` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL,
   `confirm_password` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL,
@@ -199,10 +196,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `fname`, `lname`, `email`, `password`, `confirm_password`, `address`, `image`) VALUES
-(1, 'reena', 'bade', 'badereena8811@gmail.com', '23456', '', 'thimi', ''),
-(2, 'nirdesh', 'pradhan', 'pradhan@gmail.com', '12345', '', 'tahachal', ''),
-(6, 'abc', 'xyz', 'abc@gmail.com', 'abc123', '', 'thimi', ''),
-(7, 'reena', 'bade', 'rina.bade@apexcollege.edu.np', 'reena123', '', 'thimi', '');
+(12, 'nirdesh', 'Pradhan', 'pradhan@gmail.com', 'fcea920f7412b5da7be0cf42b8c93759', 'fcea920f7412b5da7be0cf42b8c93759', 'Tahachal', 'images/263285340_588582849108618_2009844090197958938_n.jpg');
 
 -- --------------------------------------------------------
 
@@ -301,8 +295,7 @@ ALTER TABLE `song`
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `view`
@@ -321,13 +314,13 @@ ALTER TABLE `view`
 -- AUTO_INCREMENT for table `song`
 --
 ALTER TABLE `song`
-  MODIFY `song_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `song_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables

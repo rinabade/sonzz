@@ -371,42 +371,14 @@ img {
       background-color: #fff;
       color: #232323; }
 
-      .oneMusic-btn.loginbtn {
-        background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
-        border-radius: 50px;
-        color: #fff; }
-        .oneMusic-btn.loginbtn:hover, .oneMusic-btn.loginbtn:focus {
-          box-shadow: 0 4px 15px 0 rgba(17, 16, 16, 0.75);
-          background-color: #fff;
-          color: #000;
-        }
-        .oneMusic-btn.resisbtn {
-          background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
-          border-radius: 50px;
-          color: #fff; }
-          .oneMusic-btn.resisbtn:hover, .oneMusic-btn.loginbtn:focus {
-            box-shadow: 0 4px 15px 0 rgba(17, 16, 16, 0.75);
-            background-color: #fff;
-            color: #000;
-   }
-
 /* :: 4.0 Header Area CSS */
 .header-area {
-  
   position: absolute;
   z-index: 1000;
   width: 100%;
   top: 20px;
   left: 0;
   z-index: 1000; }
-  .header-area.forgetpass {
-    background-color: #000;
-    position: absolute;
-    z-index: 1000;
-    width: 100%;
-    top: 20px;
-    left: 0;
-    z-index: 1000; }
   .header-area .oneMusic-main-menu {
     position: relative;
     width: 100%;
@@ -1188,8 +1160,7 @@ a .nav-brand{
   transition-duration: 500ms;
   position: relative;
   z-index: 1;
-  background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);  
+  background-color: #f5f9fa;
   border: 1px solid #d8d8d8;
   padding: 50px 100px;
   box-shadow: 0 2px 70px 0 rgba(0, 0, 0, 0.15);
@@ -1211,36 +1182,6 @@ a .nav-brand{
     border-radius: 0; }
     .login-content .form-control:focus {
       box-shadow: none; }
-      /* register*/
-      .resis-content {
-        -webkit-transition-duration: 500ms;
-        transition-duration: 500ms;
-        position: relative;
-        z-index: 1;
-        background-color: #D9AFD9;
-        background: linear-gradient(to right, rgb(185, 147, 214), rgb(140, 166, 219));
-        border: 1px solid #d8d8d8;
-        padding: 50px 100px;
-        box-shadow: 0 2px 70px 0 rgba(0, 0, 0, 0.15);
-        text-align: center; }
-        @media only screen and (max-width: 767px) {
-          .resis-content {
-            padding: 50px 30px; } }
-        .resis-content h3 {
-          margin-bottom: 30px; }
-        .resis-content .form-group {
-          text-align: left; }
-        .resis-content .form-control {
-          width: 100%;
-          height: 50px;
-          border: 1px solid #000000;
-          font-size: 16px;
-          /*font-style: italic;*/
-          padding: 0 20px;
-          border-radius: 0; }
-          .resis-content .form-control:focus {
-            box-shadow: none; }
-      
 
 /* :: 13.0 Services Area CSS */
 .single-service-area .icon {
@@ -1542,7 +1483,6 @@ a .nav-brand{
 
 /* :: 18.0 Contact Area CSS */
 .contact-content {
-  margin-left:-5%;
   position: relative;
   z-index: 2; }
   .contact-content .contact-social-info a {
@@ -1572,8 +1512,8 @@ a .nav-brand{
       .contact-content .single-contact-info .icon span {
         font-size: 20px;
         line-height: 33px; }
+
 .contact-form-area .form-control {
-  margin-left: 5%;
   position: relative;
   z-index: 2;
   height: 45px;
@@ -1768,8 +1708,3 @@ a .nav-brand{
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */
-
-/* login*/
-.nav-brand.img1{
-  width: 8%;
-}

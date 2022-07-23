@@ -30,7 +30,8 @@
             if($row['email']===$email && $row['password']===$pass){
                 $_SESSION['artist_id']=$row['artist_id'];
                 $_SESSION['name']=$row['first_name'];
-                header("location:artist/mainpage.php ");
+                $_SESSION['lname']=$row['last_name'];
+                header("location:artist/artist.php ");
                 exit();
             }
 

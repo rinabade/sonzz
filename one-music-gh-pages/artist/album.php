@@ -1,11 +1,3 @@
-<?php 
-  SESSION_start();
-  $artist_id=$_SESSION['artist_id'];
-  // echo $artist_id;
-  // die();
-  if(isset($_SESSION['artist_id']) && isset($_SESSION['name']) && isset($_SESSION['lname'])){
-    include('../connection.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,20 +22,20 @@
     <header>
         <div class="menu_side">
         <div class="circle-frame">
-        <img class="profilepic" src="img/core-img/l.png">
+        <img class="profilepic" src="img/core-img/pp.jpg">
           </div>
         <div class="playlist">
-        <h4 class="active"><span></span><i class="bi bi-house-door"></i>Home</h4>
+        <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4>
                  <h4 class="active"><span></span><a href="artistprofile.php"><i class="bi bi-person-circle"></i>Profile</a></h4>
                  <h4 class="active"><span></span><a href="mostlyviewed.php"><i class="bi bi-emoji-heart-eyes"></i>Mostly viewed</a></h4>
         </div>
         <h5 class="yourmusic">Your Music</h5>
         <div class="playlist">
                  <h4 class="active"><span></span><a href="songs.php"><i class="bi bi-file-music"></i>Songs</a></h4>
-                 <h4 class="active"><span></span><i class="bi bi-disc"></i>Albums</h4>
+                 <h4 class="active"><span></span><a href="album.php"><i class="bi bi-disc"></i>Albums</a></h4>
         </div>
         <div class="playlist">
-                 <h4 class="active logout"><span></span><a href="../logout.php"><i class="bi bi-box-arrow-left"></i>Logout</a></h4>
+                 <h4 class="active logout"><span></span><a href="mainpage.php"><i class="bi bi-box-arrow-left"></i>Logout</a></h4>
                  
         </div>
 
@@ -58,121 +50,16 @@
                     <img src="img/core-img/l.png"> 
             </nav>
             <div class= "content">
-                <h1><?php echo $_SESSION['name']?> <?php echo $_SESSION['lname']?></h1>
-                <p>bio: </p>
+                <h1>Bipul Chettri</h1>
+                <p>bio</p>
                 <div class="buttons">
                     <button><h4>Followers: 20k</h4></button>
                 </div>
             </div>
-            <?php
-            $sql="SELECT * FROM artist where artist_id='$artist_id'";
-            $result = mysqli_query($conn, $sql);
-            $row = mysqli_fetch_array($result);
-            if($row['artist_id']==$artist_id){
-            ?>
             <div class="popular_songs">
                 <div class="h4">
-                    <h4>Popular songs</h4>
-                    <div class="btn_s">
-                    <i id="left_scroll" onclick="click()"class="bi bi-arrow-left-short"></i>
-                    <i id="right_scroll" class="bi bi-arrow-right-short"></i>
-                    </div>
-                 </div>
-                 <div class="pop_song">
-                    <li class="songItem">
-                        <div class="img_play">
-                            <img src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['image'];} ?>" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
-                      
-                 </div>
-            </div>
-            <div class="popular_songs">
-                <div class="h4">
-                    <h4> Songs</h4>
-                    <div class="btn_s">
-                    <i id="left_scroll" class="bi bi-arrow-left-short"></i>
-                    <i id="right_scroll" class="bi bi-arrow-right-short"></i>
-                    </div>
+                    <h4>Your Albums</h4>
+                
                  </div>
                  <div class="pop_song">
                     <li class="songItem">
@@ -231,23 +118,8 @@
                           </div>
                           <h5> Moutain High</h5>
                       </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
+                   
                       
-                 </div>
-            </div>
-            <div class="popular_songs">
-                <div class="h4">
-                    <h4> Mostly viewed</h4>
-                    <div class="btn_s">
-                    <i id="left_scroll" class="bi bi-arrow-left-short"></i>
-                    <i id="right_scroll" class="bi bi-arrow-right-short"></i>
-                    </div>
                  </div>
                  <div class="pop_song">
                     <li class="songItem">
@@ -306,25 +178,10 @@
                           </div>
                           <h5> Moutain High</h5>
                       </li>
-                      <li class="songItem">
-                        <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
-                            <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
-                          </div>
-                          <h5> Moutain High</h5>
-                      </li>
+                   
                       
                  </div>
             </div>
-        </div>
     </header>
-    <script src="js/artist.js"></script>
 </body>
 <html>
-<?php
-  }
-  else{
-  echo("error");
-  }
-?>
-

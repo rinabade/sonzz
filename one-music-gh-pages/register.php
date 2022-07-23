@@ -127,6 +127,11 @@
                                     
                                 </div>
 
+                                <div>
+                                    <?php if (isset($_GET['error'])){?>
+                                        <p class="error" style="font-size: 20px;"><?php echo $_GET['error']; ?></p>
+                                    <?php } ?>
+                                </div>
                                 
 
                                 <div class="form-group">
@@ -139,6 +144,7 @@
                                         <p class="error" style="font-size: 20px;"><?php echo $_GET['error1']; ?></p>
                                     <?php } ?>
                                 </div>
+                                
 
                                 <div class="form-group">
                                     <label for="exampleInputPassword1" style="font-size: 20px;">Confirm Password</label>

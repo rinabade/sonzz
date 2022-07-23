@@ -62,8 +62,8 @@
                 
                 <div class="artist-img">
                 <img src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['picture']; ?>" width="150" height="150"class="rounded-circle" id="photo"/>
-                <input type="file" id="file">
-                <label for="file" id="uploadbtn"><i style="font-size:18px" class="fa">&#xf030;</i></label>
+                <!-- <input type="file" id="file">
+                <label for="file" id="uploadbtn"><i style="font-size:18px" class="fa">&#xf030;</i></label> -->
                 </div>
                 
                     <h3 class="mt-2"><?php echo $row['first_name']?> <?php echo $row['last_name']?></h3>
@@ -72,7 +72,7 @@
                              
         <div class="wrapper">
         <div class="right">
-                      <a href="user_profile.php"><b>INFORMATION</b></a>
+                      <a href="user_profile.php"><b>INFORMATION</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
         <a href="activity.php"><b>ACTIVITIES</b></a>
         <hr><br><br>
         <div class="info">
@@ -80,25 +80,26 @@
             <div class="info_data">
              
                <div class="data">
-                    <h4>Firstname: <?php echo $row['first_name']; ?></h4>
+                    <h4>First Name &nbsp;&nbsp;:- &nbsp;&nbsp; <?php echo $row['first_name']; ?></h4>
                </div>
                <br>
                  <div class="data">
-                   <h4>Lastname : <?php echo $row['last_name']; ?></h4>
+                   <h4>Last Name &nbsp;&nbsp; :- &nbsp;&nbsp;<?php echo $row['last_name']; ?></h4>
               </div>
                  <br>
                  <div class="data">
-                    <h4><?php echo $row['email']; ?></h4>
+                    <h4>Email &nbsp;&nbsp; :- &nbsp;&nbsp; <?php echo $row['email']; ?></h4>
                     
                  </div>
                  <br>
                  <div class="data">
-                   <h4>Bio:  <?php echo $row['bio']; ?></h4>
+                   <h4>Bio  &nbsp;&nbsp;:- &nbsp;&nbsp;  <?php echo $row['bio']; ?></h4>
               </div>
               <br>
               <div class="data">
-                   <h4>Address : <?php echo $row['address']; ?></h4>
+                   <h4>Address&nbsp;&nbsp;  :- &nbsp;&nbsp;<?php echo $row['address']; ?></h4>
               </div>
+              <br><br><br>
               <div class="open">
                 <button class="button button1" onclick="openform()"> Change Information</button>
               </div>

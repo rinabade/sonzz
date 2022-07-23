@@ -854,7 +854,7 @@
             <br>
             <label>Title:</label>
             <input type="text" name="title">
-            <input type="hidden" name="id">
+            <input type="hidden" name="id" value="$artist_id">
             <br>
             <input type="submit" name="Submit" id="Submit" value="Upload"/>
             </fieldset>

@@ -1,5 +1,6 @@
 <?php 
   SESSION_start();
+  $artist_id=$_SESSION['artist_id'];
   if(isset($_SESSION['artist_id']) && isset($_SESSION['name']) && isset($_SESSION['lname'])){
     include('../connection.php');
 ?>
@@ -61,6 +62,12 @@
                     <button><h4>Followers: 20k</h4></button>
                 </div>
             </div>
+            <?php
+            $sql="SELECT * FROM song where artist_id='$artist_id'";
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_array($result);
+            if($row['artist_id']==$artist_id){
+            ?>
             <div class="popular_songs">
                 <div class="h4">
                     <h4>Popular songs</h4>
@@ -72,7 +79,7 @@
                  <div class="pop_song">
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
+                            <img src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['image'];} ?>" alt="">
                             <i class="bi playListPlay bi-play-circle-fill" id="7"></i>  
                           </div>
                           <h5> Moutain High</h5>

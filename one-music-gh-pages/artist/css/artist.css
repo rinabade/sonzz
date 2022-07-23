@@ -210,7 +210,6 @@ header .menu_side .playlist .logout{
         height: auto;
         margin: auto;
         margin-top: -15px;
-        border: 1px solid #fff;
     }
     header .song_side .popular_songs .h4{
       display: flex;
@@ -280,18 +279,3 @@ header .menu_side .playlist .logout{
        line-height:15px;
        font-size:10px;
      }
-
- 
-         
-
-    
-
-   
-  
-   
-  
-
-
-
-
-

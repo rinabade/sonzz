@@ -1127,7 +1127,9 @@ a .nav-brand{
       margin-right: 20px;
       border-radius: 50%; }
       .popular-artists-area .single-artists .thumbnail img {
-        border-radius: 50%; }
+        height: 60px;
+        width: 100px;
+        border-radius: 10px; }
     .popular-artists-area .single-artists .content- p {
       font-size: 16px;
       margin-bottom: 0; }

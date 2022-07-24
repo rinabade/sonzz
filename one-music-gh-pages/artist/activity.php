@@ -82,22 +82,22 @@
         <div class="form">
                       
                       <form action="uploadhandle.php" method="POST" enctype="multipart/form-data">
-                           <!-- <div class="element">
-                                 Upload Album
+                           <!-- <div class="header">
+                                 Upload Songs
                            </div> -->
                            <hr><br>
                            <div class="element">
-                                <label>Song : &nbsp;</label>
+                                <label>Song : &nbsp;&nbsp;</label>
                                 <input name="audio" type="file"/>
                             </div>
                             <br>
                           <div class="element">
-                                <label>Image</label>
+                                <label>Image : &nbsp;&nbsp;</label>
                                 <input name="img" type="file">
                           </div>
                           <br>
-                            <div class="element">
-                            <label>Title:</label>
+                        <div class="element">
+                            <label>Title : &nbsp;&nbsp;</label>
                                 <input type="text" name="title">
                                 <input type="hidden" name="id" value="$id">
                             </div>

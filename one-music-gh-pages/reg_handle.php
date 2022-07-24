@@ -21,7 +21,7 @@
         $num_rows=mysqli_num_rows($result);
         $num_rows1=mysqli_num_rows($result1);
         if($num_rows>=1 || $num_rows1>=1){
-            header("location:register.php?error1=Email already exists!! Please choose another email.");
+            header("location:register.php?error=Email already exists!! Please choose another email.");
             exit();
         }
         else

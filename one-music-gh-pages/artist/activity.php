@@ -99,7 +99,7 @@
                         <div class="element">
                             <label>Title : &nbsp;&nbsp;</label>
                                 <input type="text" name="title">
-                                <input type="hidden" name="id" value="$id">
+                                <input type="hidden" name="id" value="<?php echo $id;?>">
                             </div>
                             <br>
                             <div class="element">

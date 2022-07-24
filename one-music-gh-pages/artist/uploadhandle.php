@@ -23,7 +23,7 @@ function upload($name,$name1){
     $id=$_POST['id'];
     $sql="INSERT INTO song values('','$id',3,3,'$title',45,'{$name}','{$name1}')";
     mysqli_query($conn,$sql);
-    header("location:upload.php");
+    header("location:activity.php");
    
 }
 

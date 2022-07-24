@@ -254,7 +254,7 @@ body.showLoginForm .popup {
   border-radius:5px;
   cursor:pointer;
   background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
-  color:#f5f5f5;
+  color:#2b3e50;
 }
 .popup .form .element .button2:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -358,7 +358,7 @@ body.showchangeForm .popup2 {
   border-radius:5px;
   cursor:pointer;
   background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
-  color:#f5f5f5;
+  color:#2b3e50;
 }
 .popup2 .form .element .button3:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

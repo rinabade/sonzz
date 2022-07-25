@@ -159,7 +159,11 @@
                             <img src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['image'];?>" height ="200"alt="">
                             <!-- Play Icon -->
                             <div class="play-icon">
-                                <a href="<?php echo 'user/play.php?songid='.$row['song_id']; ?>" class="video--play--btn"><span class="icon-play-button"></span></a>
+                                <a href="<?php echo 'user/play.php?songid='.$row['song_id']; ?>" class="video--play--btn">
+                                    <span class="icon-play-button">
+                                        
+                                    </span>
+                                </a>
                             </div>
                         </div>
                         <div class="album-info">

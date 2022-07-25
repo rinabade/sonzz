@@ -6,6 +6,7 @@
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         $email = $_POST['email'];
+        $bio = $_POST['bio'];
         $address = $_POST['address'];
         // $id = $_POST['id'];
         $dir='images/';
@@ -23,7 +24,7 @@
             }
         }
 
-        $sql="UPDATE artist SET first_name='$fname',last_name='$lname',address='$address' WHERE email='$email'";
+        $sql="UPDATE artist SET first_name='$fname',last_name='$lname',bio='$bio',address='$address' WHERE email='$email'";
         if(mysqli_query($conn,$sql)){
             header("location:artistprofile.php");
         }

@@ -73,11 +73,12 @@
                              
         <div class="wrapper">
         <div class="right">
-            <a href="user_profile.php"><b>INFORMATION</b></a>
-            <a href="upload.php"><b>ACTIVITIES</b></a>
+            <a href="artistprofile.php"><b>INFORMATION</b></a>
+            <a href="activity.php"><b>ACTIVITIES</b></a>
             <hr><br>
-            <a href="activity.php"><b>Upload Song</b></a>
-            <a href="upload.php"><b>Upload Album</b></a>
+            
+            <a href="#"><b>Upload Song</b></a>
+            <a href="#"><b>Upload Album</b></a>
         <div class="info">
         <div class="form">
                       
@@ -85,7 +86,7 @@
                            <!-- <div class="header">
                                  Upload Songs
                            </div> -->
-                           <hr><br>
+                           <br><br><br>
                            <div class="element">
                                 <label>Song : &nbsp;&nbsp;</label>
                                 <input name="audio" type="file"/>

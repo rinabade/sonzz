@@ -31,20 +31,9 @@
    
 <div class="wrapper">
     <div class="right">
-      <?php
-         $servername = "localhost";
-         $username = "root";
-         $password = "";
-         $dbname = "sahyog";
+    <?php
 
-          // Create connection
-         $conn = mysqli_connect($servername, $username, $password, $dbname);
-            // Check connection
-         if(!$conn){
-            die("Connection failed: " . mysqli_connect_error());
-         }
-
-          $sql="SELECT * FROM user WHERE id='$id'";
+          $sql="SELECT * FROM admin WHERE admin_id='$id'";
           $query = mysqli_query($conn,$sql);
           if (mysqli_num_rows($query) === 1) {
           $row =  mysqli_fetch_assoc($query);

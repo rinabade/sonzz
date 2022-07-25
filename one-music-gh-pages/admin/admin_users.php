@@ -43,7 +43,7 @@
 									<th>FIRST_NAME</th>
 									<th>LAST_NAME</th>
 									<th>EMAIL</th>
-									<th>PHONE_NUMBER</th>
+									
 									<th>ADDRESS</th>
 									<th style="text-align: center;">ACTION</th>
 								</tr>
@@ -59,15 +59,15 @@
 											  while($row = mysqli_fetch_assoc($result)) {
 										?>
 										<tr>
-											<td><?php echo $row["id"]; ?></td>
-											<td><?php echo $row["first_name"]; ?></td>
-											<td><?php echo $row["last_name"]; ?></td>
+											<td><?php echo $row["user_id"]; ?></td>
+											<td><?php echo $row["fname"]; ?></td>
+											<td><?php echo $row["lname"]; ?></td>
 											<td><?php echo $row["email"]; ?></td>
-											<td><?php echo $row["phone"]; ?></td>
+											
 											<td><?php echo $row["address"]; ?></td>
 											<td>
 												<span class="action_btn">
-													<a href="#" class="delete delete-btn" data-id="<?php echo $row["id"]; ?>">Delete</a>
+													<a href="#" class="delete delete-btn" data-id="<?php echo $row["user_id"]; ?>">Delete</a>
 												</span> <!-- actionbtn -->
 											</td>
 										</tr>

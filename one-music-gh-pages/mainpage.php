@@ -144,13 +144,13 @@
 
             <div class="row">
             <?php
-                            include_once "connection.php";
-                            $sql="SELECT * FROM song ORDER BY song_id DESC LIMIT 0,12";
-                            $result = mysqli_query($conn, $sql);
+                include_once "connection.php";
+                $sql="SELECT * FROM song ORDER BY song_id DESC LIMIT 0,12";
+                $result = mysqli_query($conn, $sql);
                             
-                            while($row = mysqli_fetch_array($result)){
+                while($row = mysqli_fetch_array($result)){
                                 
-                        ?>
+            ?>
 
                 <!-- Single Album Area -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
@@ -161,7 +161,7 @@
                             <div class="play-icon">
                                 <a href="<?php echo 'user/play.php?songid='.$row['song_id']; ?>" class="video--play--btn">
                                     <span class="icon-play-button">
-                                        
+
                                     </span>
                                 </a>
                             </div>
@@ -233,73 +233,23 @@
                             <p>See what’s new</p>
                             <h2>This week’s top</h2>
                         </div>
-
+                        
+                        <?php
+                  $sql="SELECT * FROM song  join artist on 	song.artist_id=artist.artist_id ORDER BY view_count DESC LIMIT 0,7";
+                  $result = mysqli_query($conn, $sql);
+                  while($row = mysqli_fetch_array($result)){
+                 ?>
                         <!-- Single Top Item -->
                         <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="100ms">
                             <div class="thumbnail">
-                                <img src="img/bg-img/wt1.jpg" alt="">
+                                <img src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['image'];?>" alt="">
                             </div>
                             <div class="content-">
-                                <h6>Sam Smith</h6>
-                                <p>Underground</p>
+                                <h6><?php echo $row['first_name']?> <?php echo $row['last_name']?></h6>
+                                <p><?php echo $row['song_title']?></p>
                             </div>
                         </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="150ms">
-                            <div class="thumbnail">
-                                <img src="img/bg-img/wt2.jpg" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>Power Play</h6>
-                                <p>In my mind</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="200ms">
-                            <div class="thumbnail">
-                                <img src="img/bg-img/wt3.jpg" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>Cristinne Smith</h6>
-                                <p>My Music</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="250ms">
-                            <div class="thumbnail">
-                                <img src="img/bg-img/wt4.jpg" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>The Music Band</h6>
-                                <p>Underground</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="300ms">
-                            <div class="thumbnail">
-                                <img src="img/bg-img/wt5.jpg" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>Creative Lyrics</h6>
-                                <p>Songs and stuff</p>
-                            </div>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-top-item d-flex wow fadeInUp" data-wow-delay="350ms">
-                            <div class="thumbnail">
-                                <img src="img/bg-img/wt6.jpg" alt="">
-                            </div>
-                            <div class="content-">
-                                <h6>The Culture</h6>
-                                <p>Pop Songs</p>
-                            </div>
-                        </div>
-
+                        <?php }?> 
                     </div>
                 </div>
 
@@ -310,102 +260,27 @@
                             <p>See what’s new</p>
                             <h2>New Hits</h2>
                         </div>
-
+                        <?php
+                        $sql="SELECT * FROM song  join artist on song.artist_id=artist.artist_id ORDER BY view_count DESC LIMIT 0,7";
+                        $result = mysqli_query($conn, $sql);
+                        while($row = mysqli_fetch_array($result)){
+                        ?>
                         <!-- Single Top Item -->
                         <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="100ms">
                             <div class="first-part d-flex align-items-center">
                                 <div class="thumbnail">
-                                    <img src="img/bg-img/wt7.jpg" alt="">
+                                    <img src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['image'];?>" alt="">
                                 </div>
                                 <div class="content-">
-                                    <h6>Sam Smith</h6>
-                                    <p>Underground</p>
+                                    <h6><?php echo $row['first_name']?> <?php echo $row['last_name']?></h6>
+                                    <p><?php echo $row['song_title']?></p>
                                 </div>
                             </div>
                             <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
+                                <source src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['song'] ;?>">
                             </audio>
                         </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="150ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="img/bg-img/wt8.jpg" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>Power Play</h6>
-                                    <p>In my mind</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="200ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="img/bg-img/wt9.jpg" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>Cristinne Smith</h6>
-                                    <p>My Music</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="250ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="img/bg-img/wt10.jpg" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>The Music Band</h6>
-                                    <p>Underground</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="300ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="img/bg-img/wt11.jpg" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>Creative Lyrics</h6>
-                                    <p>Songs and stuff</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
-
-                        <!-- Single Top Item -->
-                        <div class="single-new-item d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="350ms">
-                            <div class="first-part d-flex align-items-center">
-                                <div class="thumbnail">
-                                    <img src="img/bg-img/wt12.jpg" alt="">
-                                </div>
-                                <div class="content-">
-                                    <h6>The Culture</h6>
-                                    <p>Pop Songs</p>
-                                </div>
-                            </div>
-                            <audio preload="auto" controls>
-                                <source src="audio/dummy-audio.mp3">
-                            </audio>
-                        </div>
+                        <?php }?> 
                     </div>
                 </div>
 

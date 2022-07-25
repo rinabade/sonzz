@@ -44,7 +44,7 @@
 										
 										$id = $_GET['id'];
 
-										$sql = "SELECT * FROM request LEFT JOIN user ON request.donee_id = user.id LEFT JOIN donation_mode ON request.mode = donation_mode.id LEFT JOIN donation ON request.request_id = donation.request_id WHERE donor_id = $id " ;
+										$sql = "SELECT * FROM song   WHERE artist_id = '$id' " ;
 
 											$result = mysqli_query($conn, $sql);
 
@@ -54,12 +54,14 @@
 				?>
 
 				<tr>
-					<td><?php echo $row["donation_id"]; ?></td>
-					<td><?php echo $row["first_name"].' '.$row["last_name"];   ?></td>
-					<td><?php echo $row["requested_date"]; ?></td>
-					<td><?php echo $row["agenda"]; ?></td>
-					<td><?php echo $row["modes"]; ?></td>
-					<td><?php echo $row["modes"]; ?></td>
+					<td><?php echo $row["song_id"]; ?></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><?php echo $row["song_title"]; ?></td>
+					<td><audio preload="auto" controls style="height:30px; width:300px;">
+                                <source src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['song'] ;?>">
+                            </audio></td>
 				</tr>
 
 				<?php 

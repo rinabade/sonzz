@@ -39,7 +39,7 @@
         <img class="profilepic" src="img/core-img/l.png" width="150" height="150" >
           </div>
         <div class="playlist">
-        <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4>
+        <!-- <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4> -->
                  <h4 class="active"><span></span><i class="bi bi-person-circle"></i>Profile</h4>
                  <h4 class="active"><span></span><a href="mostlyviewed.php"><i class="bi bi-emoji-heart-eyes"></i>Mostly viewed</a></h4>
         </div>
@@ -154,7 +154,7 @@
                                 <label for="address"><b>Address</b></label>
                                   <input type="text"  placeholder="Address" name="address" id="address" value="<?php echo $row['address']; ?>" required="required">
                               </div>
-                              
+
                               <div class="element">
                                 <button type="submit" class="button2" name="save">Save changes</button>
                               </div>

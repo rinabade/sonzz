@@ -40,7 +40,7 @@
         <img class="profilepic" src="img/core-img/l.png" width="150" height="150" >
           </div>
         <div class="playlist">
-        <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4>
+        <!-- <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4> -->
                  <h4 class="active"><span></span><i class="bi bi-person-circle"></i>Profile</h4>
                  <h4 class="active"><span></span><a href="mostlyviewed.php"><i class="bi bi-emoji-heart-eyes"></i>Mostly viewed</a></h4>
         </div>

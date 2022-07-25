@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html,
+body {
+    height: 100%;
+}
+:root{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+body { 
+    font-family: "Roboto", sans-serif;
+    color: var(--black-color);
+    background-image: var(--bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    padding:8px;
+    width:95%;
+    height:auto;
+    border-radius: 20px;
+    background-image:var(--bg-card);
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+    overflow:hidden;
+}
+.header{
+    display:flex;
+    align-items:center;
+    margin:8px 0 24px;
+}
+.header .playing{
+    flex-grow: 1;
+    text-align: center;
+}
+.alink, .alink1, .alink2, .alink3, .alink4, .alink5{
+    display: inline-block;
+    text-align: center;
+    cursor:pointer;
+}
+.alink i{
+    width:20px;
+    font-size: 20px;
+}
+
+.album_cover{
+    margin-bottom:24px;
+}
+.album_cover img{
+    width:150px;
+    display: block;
+    margin:auto;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+.song_info{
+    margin-bottom:16px;
+    text-align: center;
+}
+.song_info .song_name{
+    margin-bottom:8px;
+    font-size: 20px;
+}
+.song_info .song_artist{
+    color:var(--gray-color);
+    font-size:12px;
+}
+.timeline .dueration{
+    font-size: 12px;
+}
+.timeline .time .current{
+    float:left;
+}
+.timeline .time .total{
+    float:right;
+}
+.timeline .time::after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.timeline .slider{
+    width:100%;
+    height:2px;
+    border-radius: 2px;
+    background:var(--gray-color);
+    cursor:pointer;
+    position:relative;
+}
+.timeline .slider .progress{
+    width:30%;
+    height:100%;
+    pointer-events:none;
+    background: var(--orange-color);
+    position:absolute;
+}
+.timeline .slider .progress .pin{
+    width:8px;
+    height:8px;
+    border-radius: 8px;
+    pointer-events:all;
+    background:var(--black-color);
+    position:absolute;
+    right:-5px;
+    top:-3px;
+}
+.controls{
+    margin:32px 0;
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    position:relative;
+}
+.footer{
+    text-align: center;
+}
+.footer .lyrics{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+        
+      

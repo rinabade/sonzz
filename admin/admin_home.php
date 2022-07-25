@@ -139,7 +139,7 @@
 							<th>ID</th>
 							<th>NAME</th>
 							<th>CONTACT</th>
-							<th>NUMBER OF DONATION DONE</th>
+							<th>NUMBER OF SONGS UPLOADED</th>
 						</tr>
 					</thead>
 

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'poppins',sans-serif;
+    width:100%;
+    height: -600px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+}
+header .menu_side, .song_side{
+    position: relative;
+    width: 20%;
+    height: auto;
+    background-color:#111727;
+    box-shadow:5px 0px 2px#090f1f;
+    color:#fff;
+}
+header .song_side{
+    width:80%;
+     background:#0b1320;
+}
+header .menu_side h1{
+    font-size:20px;
+    margin:15px 0px 0px 20px;
+    font-weight:500;
+}
+header .menu_side .playlist{
+    margin:40px 0px 0px 20px;
+}
+header .menu_side .playlist h4{
+    font-size:14px;
+    font-weight:400;
+    padding-bottom:10px;
+    color:#4c5262;
+    cursor: pointer;
+    align-items:center; 
+    transition:.3s linear;
+
+}
+header .menu_side .playlist h4:hover{
+    color: #fff;
+}
+header .menu_side .playlist h4 span{
+   position: relative; 
+
+}
+header .menu_side .playlist h4 span::before{
+    content:'';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #4c5262;
+    border-radius: 50%; 
+    top: -4px;
+    transition: .3s linear;
+}
+header .menu_side .playlist h4 span::before:hover{
+    border: 2px solid #fff ;
+}
+header .menu_side .playlist h4 .bi{
+    width: 20%;
+    margin-right: 30px;
+}
+header .menu_side .playlist .active{
+    color: #36e2ec;
+}
+header .menu_side .playlist .active span{
+    display: none;
+}
+header .menu_side .playlist .active a{
+  text-decoration: none;
+  color: #36e2ec;
+}
+header .menu_side .playlist .active a:hover{
+  color: #fff;
+}
+header .menu_side .playlist .logout{
+   margin-top: 80px;
+}
+
+.circle-frame {
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 90px;
+    min-width: 20%; /* depends on size of photo & container */
+    height: auto; /* just to reset to default if needed */
+    padding-top: 10%; /* must equal min-width to make a circle */
+    margin-left: 20px;
+
+  }
+  .profilepic{
+    border-radius: 50px;
+    width: 70px;
+    min-width: 20%; /* depends on size of photo & container */
+    height:80px; 
+  }
+  header .menu_side h5{
+    margin:20px 0px 0px 20px;
+  }
+    header .song_side{
+        z-index: 2;
+  }
+
+
+#file{
+    display: none;
+}
+#uploadbtn{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(173,172,172,0.801);
+    box-shadow: 2px 4px 4px rgb(0,0,0.644);
+    transform: translateX(-90%);
+    margin-top: 70px;
+
+}
+
+
+.card {
+	color:#fff;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom:5% ;
+    border-radius: 10px;
+   background:none;
+   box-shadow: 2px 4px 4px rgb(0,0,0.644);
+    border: none
+}
+
+.neo-button {
+    width: 50px;
+    height: 50px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+background: #fff;
+}
+
+.num{
+	
+	color:#eee !important;
+}
+
+.line{
+	color:#fff;
+}
+
+.neo-button:active {
+   border-radius: 50%;
+background: #e7e7f0;
+box-shadow:  28px 28px 57px #503da2, 
+             -28px -28px 57px #6e51d6;
+}
+
+.fa-google {
+    color: #1b1a42
+}
+.fa-facebook {
+    color: #1b1a42
+}
+.fa-twitter {
+    color: #1b1a42
+}
+
+
+
+  .wrapper .right h2{
+    text-transform: uppercase;
+  }
+  
+  .wrapper .right a{
+    font-size: 18px;
+    color: #fff;
+    
+    text-decoration: none;
+    padding: 20px;
+  }
+  .wrapper .right a:hover {
+  color: #7a3b2e;
+
+  }
+  .wrapper .right .projects a{
+    font-size: 18px;
+    color: #fff;
+    float: left!important;
+  
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  .wrapper .right .projects {
+    margin-top: 1px;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  
+  .wrapper .right .projects a:hover {
+  color: #7a3b2e;
+
+  }
+
+.wrapper .right{
+  
+  width: 100%;
+  margin-left: 0px!important;
+  float: left !important;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    .button{
+      margin:0px;
+       }
+     .wrapper{
+     display: block;
+      } 
+       }
+ 
+
+  
+  /*for popup 2*/
+  
+  .button2 {
+    color: #fff;
+    border-radius: 50px;
+    background: #337aff;
+    
+    
+  }
+  
+  .button2:hover {
+    background: none;
+    border: 1px solid #fff;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .form{
+    margin-top: 10%;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 100%;
+    left: 15%;
+    border-radius: 10px;
+  }
+  label{
+    margin-top: 15px;
+    letter-spacing:5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position:relative;
+  }
+  
+  input {
+    width: 30%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+ 
+  .choose{
+    color: #4c5262;
+    border: 1px solid #fff;
+    padding:8px 10px;
+    background:none;
+    position:relative;
+    margin-left: 35%;
+    width: 30%;
+    text-align:center;
+    letter-spacing: 3px;
+    cursor:pointer;
+    border-radius: 5px;
+    font-size: 15px;
+  
+  }
+  
+  .file {
+      position: absolute;
+      z-index: 1000;
+      opacity: 0;
+      cursor: pointer;
+      right: 0;
+      top: 0;
+      height: 100%;
+      font-size: 24px;
+      width: 100%;
+      
+  }
+  .choose:hover{
+    opacity: 0.7;
+    box-shadow:7px 7px 7px #000;
+    }
+  
+  

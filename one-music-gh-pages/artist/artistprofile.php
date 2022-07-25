@@ -72,10 +72,10 @@
                              
         <div class="wrapper">
         <div class="right">
-                      <a href="user_profile.php"><b>INFORMATION</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="activity.php"><b>ACTIVITIES</b></a>
-        <hr><br><br>
-        <div class="info">
+            <a href="artistprofile.php"><b>INFORMATION</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="activity.php"><b>ACTIVITIES</b></a>
+          <hr><br><br>
+          <div class="info">
             
             <div class="info_data">
              
@@ -139,22 +139,22 @@
                                 <label for="lname"><b>Lastname</b></label>
                                   <input type="text"  placeholder="Lastname" name="lname" id="lname" value="<?php echo $row['last_name']; ?>" required="required">
                               </div>
-                              <!-- <div class="element">
-                                <label for="password"><b>Password</b></label>
-                                  <input type="password"  placeholder="Password" name="password" id="password" required="required">
-                              </div> -->
+                              
                               <div class="element">
                                 <label for="email"><b>Email</b></label>
                                   <input type="email"  placeholder="Email" name="email" id="email" value="<?php echo $row['email']; }?>"required readonly>
                               </div>
-                              <!-- <div class="element">
-                                <label for="phone"><b>Phone number</b></label>
-                                  <input type="text"  placeholder="Phone number" name="Phone_number" id="phone" value="" required="required">
-                              </div> -->
+
+                              <div class="element">
+                                <label for="bio"><b>Bio</b></label>
+                                  <input type="text"  placeholder="Bio" name="bio" id="bio" value="<?php echo $row['bio']; ?>" required="required">
+                              </div>
+
                               <div class="element">
                                 <label for="address"><b>Address</b></label>
                                   <input type="text"  placeholder="Address" name="address" id="address" value="<?php echo $row['address']; ?>" required="required">
                               </div>
+                              
                               <div class="element">
                                 <button type="submit" class="button2" name="save">Save changes</button>
                               </div>

@@ -73,40 +73,67 @@
                              
         <div class="wrapper">
         <div class="right">
-            <a href="user_profile.php"><b>INFORMATION</b></a>
+            <a href="artistprofile.php"><b>INFORMATION</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="upload.php"><b>ACTIVITIES</b></a>
             <hr><br>
             <a href="activity.php"><b>Upload Song</b></a>
-            <a href="upload.php"><b>Upload Album</b></a>
+            <a href="albumpic.php"><b>Upload Album</b></a>
         <div class="info">
-        <div class="form">
+          <div class="form">
+            <div class="container1">
+              <label>Song title :</label><br>
+              <input type="text" placeholder="" name="id"  required><br><br>
+              
+              <label>Song :</label><br>
+              <!-- <div class="choose">  -->
+              <input type="file" name="audio" class="file">
+              <!-- </div> -->
+              <br><br>
+              
+              <label>Image</label><br>
+              <!-- <div class="choose">  -->
+              <input type="file" name="img" class="file">
+              <!-- </div> -->
+              <br><br>
                       
-                      <form action="uploadhandle.php" method="POST" enctype="multipart/form-data">
-                           <!-- <div class="element">
-                                 Upload Album
-                           </div> -->
-                           <hr><br>
-                           <div class="element">
-                                <label>Song : &nbsp;</label>
-                                <input name="audio" type="file"/>
-                            </div>
-                            <br>
-                          <div class="element">
-                                <label>Image</label>
-                                <input name="img" type="file">
-                          </div>
-                          <br>
-                            <div class="element">
-                            <label>Title:</label>
-                                <input type="text" name="title">
-                                <input type="hidden" name="id" value="$id">
-                            </div>
-                            <br>
-                            <div class="element">
-                                <Button type="submit" name="Submit" id="Submit" value="Upload">Upload</Button>
-                            </div>
-                            
-                      </form>
+              <div class="open">
+                <button class="button button2"> Upload </button><br><br>
+              </div>
+            </div>
+          </div>
+
+        <div class="form">
+        
+          <div class="container1">
+            <br><br><br>
+            <label>Album Name :</label> &nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="" name="id"  required><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <label>Songs :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <div class="choose">  -->
+              <input type="file" name="audio" class="file">
+              <!-- </div> -->
+            <br><br> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Image :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- <div class="choose">  -->
+            <input type="file" name="img" class="file">
+            
+            <!-- </div> -->
+            <br><br>
+                    <div class="open">
+                  <button class="button button2"> Upload </button><br><br>
+                </div>
+          </div>
+        </div>
+              
+          
+        <!-- change -->
+              
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+                      
+                    
                         
                          
                   </div>

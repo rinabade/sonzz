@@ -31,7 +31,7 @@
                 $_SESSION['artist_id']=$row['artist_id'];
                 $_SESSION['name']=$row['first_name'];
                 $_SESSION['lname']=$row['last_name'];
-                header("location:artist/artist.php ");
+                header("location:artist/artistprofile.php ");
                 exit();
             }
 

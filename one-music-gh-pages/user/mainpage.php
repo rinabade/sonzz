@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         .dropbtn {
         background-color: none;
@@ -225,22 +226,21 @@
 
             <div class="row">
             <?php
-                            include_once "../connection.php";
-                            $sql="SELECT * FROM song ORDER BY song_id DESC LIMIT 0,12";
-                            $result = mysqli_query($conn, $sql);
-                            
-                            while($row = mysqli_fetch_array($result)){
-                                
-                        ?>
+                include_once "../connection.php";
+                $sql="SELECT * FROM song  join artist on 	song.artist_id=artist.artist_id ORDER BY song_id DESC LIMIT 0,12";
+                $result = mysqli_query($conn, $sql);
+                while($row = mysqli_fetch_array($result)){
+            ?>
+                        
 
-                <!-- Single Album Area -->
+            <!-- Single Album Area -->
                 <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                     <div class="single-album-area wow fadeInUp" data-wow-delay="100ms">
                         <div class="album-thumb">
                             <img src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['image'];?>" height ="200"alt="">
                             <!-- Play Icon -->
                             <div class="play-icon">
-                                <a href="<?php echo 'play.php?songid='.$row['song_id']; ?>" class="video--play--btn">
+                                <a href="<?php echo '../player/player.php?songid='.$row['song_id']; ?>" class="video--play--btn">
                                     <span class="icon-play-button">
                                         
                                     </span>
@@ -252,6 +252,13 @@
                                 <h5></h5>
                             </a>
                             <p><?php echo $row['song_title']?></p>
+                            <span class="grey-text">
+                                by <?php echo $row['first_name']; ?> <?php echo $row['last_name']; ?>
+                            </span><br>
+                            <span>
+                                <i class="material-icons">visibility </i>
+                                <?php echo $row['view_count']; ?>
+                            </span>
                             <!-- <audio preload="auto">
                                 <source src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['song'] ;?>" type="audio/mpeg">
                             </audio> -->

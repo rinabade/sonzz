@@ -26,7 +26,7 @@
         <img class="profilepic" src="">
           </div>
         <div class="playlist">
-        <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4>
+        <!-- <h4 class="active"><span></span><a href="artist.php"><i class="bi bi-house-door"></i>Home</a></h4> -->
                  <h4 class="active"><span></span><i class="bi bi-person-circle"></i>Profile</h4>
                  <h4 class="active"><span></span><i class="bi bi-emoji-heart-eyes"></i>Mostly viewed</h4>
         </div>

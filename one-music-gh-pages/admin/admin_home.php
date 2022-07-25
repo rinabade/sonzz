@@ -2,9 +2,8 @@
 	include "connection.php";
 	session_start();
 
-  if(!isset($_SESSION["admin_email"])){
-    header("Location: index.php");
-  }
+  if(isset($_SESSION["admin_email"])){
+  
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,24 +31,24 @@
 			<!-- <div class="total_donee">
 				<h4>TOTAL DONEE </h4>
 				<?php
-										 $sql = "SELECT COUNT(donee_id) FROM request GROUP BY donee_id";
-											$result = mysqli_query($conn, $sql);
+					$sql = "SELECT COUNT(user_id) FROM user GROUP BY user_id";
+					$result = mysqli_query($conn, $sql);
 
-											 $total_donee=mysqli_num_rows($result);
+						$total_donee=mysqli_num_rows($result);
 
-											
-											 ?>
-						<span class="number"><?php echo $total_donee; ?></span>							
+					
+						?>
+				<span class="number"><?php echo $total_donee; ?></span>							
 			</div> -->
 
 			<div class="total_donor">
 				<h4>TOTAL ARTISTS </h4>
 				<?php
-										 $sql = "SELECT COUNT(donor_id) FROM donation GROUP BY donor_id ";
-											$result = mysqli_query($conn, $sql);
+					$sql = "SELECT COUNT(artist_id) FROM artist GROUP BY artist_id ";
+					$result = mysqli_query($conn, $sql);
 
-											 $counter=mysqli_num_rows($result);
-							
+						$counter=mysqli_num_rows($result);
+	
 				?>
 
 				<span class="number"><?php echo $counter; ?></span>
@@ -59,10 +58,10 @@
 				<h4>TOTAL USERS </h4>
 
 				<?php
-										 $sql = "SELECT * FROM user  ";
-											$result = mysqli_query($conn, $sql);
+					$sql = "SELECT * FROM user  ";
+					$result = mysqli_query($conn, $sql);
 
-											 $counter=mysqli_num_rows($result);
+						$counter=mysqli_num_rows($result);
 							
 				?>
 
@@ -72,10 +71,10 @@
 			<div class="total_requests">
 				<h4>TOTAL SONGS </h4>
 				<?php
-										 $sql = "SELECT * FROM request  ";
-											$result = mysqli_query($conn, $sql);
+					$sql = "SELECT * FROM song  ";
+					$result = mysqli_query($conn, $sql);
 
-											 $counter=mysqli_num_rows($result);
+						$counter=mysqli_num_rows($result);
 							
 				?>
 
@@ -100,19 +99,21 @@
 					<tbody>
 
 						<?php
-										$sql = "SELECT * FROM feedback LIMIT 5";
-											$result = mysqli_query($conn, $sql);
+							$sql = "SELECT * FROM song  JOIN artist ON song.artist_id = artist.artist_id  LIMIT 5";
+								$result = mysqli_query($conn, $sql);
 
-											if (mysqli_num_rows($result) > 0) {
-											  // output data of each row
-											  while($row = mysqli_fetch_assoc($result)) {
+								if (mysqli_num_rows($result) > 0) {
+									// output data of each row
+									while($row = mysqli_fetch_assoc($result)) {
 						?>
 
 						<tr>
-							<td><?php echo $row["id"]; ?></td>
-							<td><?php echo $row["full_name"]; ?></td>
-							<td><?php echo $row["email"]; ?></td>
-							<td><?php echo $row["Comments"]; ?></td>
+							<td><?php echo $row["artist_id"]; ?></td>
+							<td><?php echo $row["first_name"]?> <?php echo $row["last_name"];?></td>
+							<td><?php echo $row["song_title"]; ?></td>
+							<td><audio preload="auto" controls style="height:30px; width:300px;">
+                                <source src="http://localhost/Sonzz/one-music-gh-pages/artist/<?php echo $row['song'] ;?>">
+                            </audio></td>
 						</tr>
 
 						<?php 
@@ -130,7 +131,7 @@
 			</div> <!-- table end -->
 			</div>
 
-			<div class="donors">
+			<!-- <div class="donors">
 				<h3>Top 5 Artist</h3>
 				<div class="my_table">
 				<table>
@@ -146,34 +147,42 @@
 					<tbody>
 
 						<?php
-										 $sql = "SELECT COUNT(donor_id) , donor_id, first_name, last_name, phone FROM donation LEFT JOIN user ON donation.donor_id = user.id GROUP BY donor_id  ORDER BY  COUNT(donor_id) DESC LIMIT 5";
-											$result = mysqli_query($conn, $sql);
+							$sql = "SELECT * FROM artist LIMIT 5";
+							$result = mysqli_query($conn, $sql);
 
-											if (mysqli_num_rows($result) > 0) {
-											  // output data of each row
-											  while($row = mysqli_fetch_assoc($result)) {
+							if (mysqli_num_rows($result) > 0) {
+								// output data of each row
+								while($row = mysqli_fetch_assoc($result)) {
+									$id=$row['artist_id'];
 						?>
 
 
 						<tr>
-							<td><?php echo $row["donor_id"]; ?></td>
-							<td><?php echo $row["first_name"].' '.$row["last_name"];   ?></td>
-							<td><?php echo $row["phone"]; ?></td>
-							<td><?php echo $row["COUNT(donor_id)"]; ?></td>
+							<td><?php echo $row["artist_id"]; ?></td>
+							<td><?php echo $row["first_name"].' '.$row["last_name"]; }  ?></td>
+							<td></td>
+							<?php
+							$sql="SELECT count(artist_id) from song where artist_id='$id'"; 
+							$result = mysqli_query($conn, $sql);
+
+							$counter=mysqli_num_rows($result);
+
+							?>
+							
+							<td><?php echo $counter; ?></td>
 						</tr>
 						<?php 
-						  }
+						  
 							} else {
 								 echo "0 results";
 									}
 
-							mysqli_close($conn);
 						?>
 
 					</tbody>
 				</table>
 			</div> <!-- table end -->
-			</div>
+			</div> -->
 
 			
 			
@@ -181,3 +190,9 @@
 	</div>
 	</body>
 </html>
+<?php 
+  }
+  else{
+	echo mysqli_error($conn);
+  }
+  ?>

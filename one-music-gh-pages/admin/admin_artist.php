@@ -29,7 +29,7 @@
 						<tr>
 							<th>ID</th>
 							<th>NAME</th>
-							<th>CONTACT</th>
+							<th>EMAIL</th>
 							<th style="text-align: center;">SONGS UPLOADED</th>
 						</tr>
 					</thead>
@@ -37,7 +37,7 @@
 					<tbody>
 
 						<?php
-										$sql = "SELECT * FROM donation LEFT JOIN user ON donation.donor_id = user.id GROUP BY user.id";
+										$sql = "SELECT * FROM  artist  ";
 											$result = mysqli_query($conn, $sql);
 
 											if (mysqli_num_rows($result) > 0) {
@@ -47,12 +47,12 @@
 
 
 						<tr>
-							<td><?php echo $row["id"]; ?></td>
+							<td><?php echo $row["artist_id"]; ?></td>
 							<td><?php echo $row["first_name"].' '.$row["last_name"];   ?></td>
-							<td><?php echo $row["phone"]; ?></td>
+							<td><?php echo $row["email"]; ?></td>
 							<td>
 								<span class="action_btn">
-									<a href="admin_list.php?id=<?php echo $row["id"]; ?>" class="list list-btn">LIST</a>
+									<a href="admin_list.php?id=<?php echo $row["artist_id"]; ?>" class="list list-btn">Preview</a>
 								</span> <!-- action btn -->
 							</td>
 						</tr>

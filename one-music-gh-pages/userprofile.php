@@ -1,3 +1,12 @@
+<?php
+    SESSION_start();
+    $id=$_SESSION['user_id'];
+    $fname=$_SESSION['fname'];
+    if(isset($_SESSION['user_id']) && isset($_SESSION['fname'])){
+      include_once "connection.php";
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,47 +61,55 @@
                 
             </div>
             <div class="playing">
-            <main>
+        <main>
       
       <div class="container d-flex justify-content-center">
         <div class="card p-3 py-4">
             <div class="text-center"> 
+            <?php 
+                include "connection.php";
 
+                  $sql="SELECT * FROM user WHERE user_id='$id' ";
+                  $result = mysqli_query($conn, $sql);
+                  $row = mysqli_fetch_array($result);
+                  if($row['user_id']==$id){
+                    // echo base64_encode($row['image']) ;
+            ?> 
             <div class="artist-img">
-            <img src="img/bg-img/pa1.jpg" width="100" class="rounded-circle" id="photo"/>
+            <img src="http://localhost/Sonzz/one-music-gh-pages/user/<?php echo $row['image']; ?>" width="180" height="165" class="rounded-circle" id="photo"> 
             
             </div>
             
-                <h3 class="mt-2"> Aditi Shrestha</h3>
+                <h3 class="mt-2"> <?php echo $row['fname']; ?> <?php echo $row['lname']; ?></h3>
                   <hr class="line">
       <div class="wrapper">
         <div class="right">
                       <a href="user_profile.php"><b>INFORMATION</b></a>
-        <a href="activity.php"><b>SONGS</b></a>
+        <a href="activity.php"><b>Followings</b></a>
         <hr><br><br>
         <div class="info">
             
             <div class="info_data">
              
                <div class="data">
-                    <h4>Firstname: Aditi</h4>
+                    <h4>Firstname: <?php echo $row['fname']; ?></h4>
                </div>
                <br>
                  <div class="data">
-                   <h4>Lastname : Shrestha</h4>
+                   <h4>Lastname : <?php echo $row['lname']; ?></h4>
               </div>
                  <br>
                  <div class="data">
-                    <h4>Email: aditi@gmail.com</h4>
+                    <h4>Email: <?php echo $row['email']; ?></h4>
                     
                  </div>
                  <br>
-                 <div class="data">
+                 <!-- <div class="data">
                    <h4>Phone: 9818035087</h4>
-              </div>
+              </div> -->
               <br>
               <div class="data">
-                   <h4>Address: Baneshwor</h4>
+                   <h4>Address: <?php echo $row['address']; }?></h4>
               </div>
               </div>
               </div>
@@ -125,12 +142,12 @@
                              <hr><br>
                             <div class="element">
                                <label for="fname"><b>Firstname</b></label>
-                                <input type="text"  placeholder="Firstname" name="fname" id="fname" value="" required="required">
+                                <input type="text"  placeholder="Firstname" name="fname" id="fname" value="<?php echo $row['fname']; ?>" required="required">
                             </div>
       
                               <div class="element">
                                 <label for="lname"><b>Lastname</b></label>
-                                  <input type="text"  placeholder="Lastname" name="lname" id="lname" value="" required="required">
+                                  <input type="text"  placeholder="Lastname" name="lname" id="lname" value="<?php echo $row['lname']; ?>" required="required">
                               </div>
                               <!-- <div class="element">
                                 <label for="password"><b>Password</b></label>
@@ -138,15 +155,15 @@
                               </div> -->
                               <div class="element">
                                 <label for="email"><b>Email</b></label>
-                                  <input type="email"  placeholder="Email" name="email" id="email" value=" required="required">
+                                  <input type="email"  placeholder="Email" name="email" id="email" value="<?php echo $row['email']; ?>" readonly>
                               </div>
-                              <div class="element">
+                              <!-- <div class="element">
                                 <label for="phone"><b>Phone number</b></label>
                                   <input type="text"  placeholder="Phone number" name="Phone_number" id="phone" value="" required="required">
-                              </div>
+                              </div> -->
                               <div class="element">
                                 <label for="address"><b>Address</b></label>
-                                  <input type="text"  placeholder="Address" name="address" id="address" value="" required="required">
+                                  <input type="text"  placeholder="Address" name="address" id="address" value="<?php echo $row['address']; ?>" required="required">
                               </div>
                               <div class="element">
                                 <button type="submit" class="button2" name="save">Save changes</button>
@@ -222,6 +239,14 @@
  
          </div>
        
-            
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
  </body>
  </html>
+
+ <?php
+    }
+    else{
+      echo "error";
+    }
+?>

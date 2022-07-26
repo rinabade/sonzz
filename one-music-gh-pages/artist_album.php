@@ -18,12 +18,12 @@
             <a href="mainpage.php"><img src="img/core-img/l.png" alt="SONZZ" class="logo"></a>
                 <div class="playlist-card">
                     <i class="fas fa-home"></i>
-                    <h3 class="playlist-main-content">Home</h3>
+                    <a href="user.php"><h3 class="playlist-main-content">Home</h3></a>
 
                 </div>
                 <div class="playlist-card">
                     <i class="fas fa-user"></i>
-                    <h3 class="playlist-main-content">Profile</h3>
+                    <a href="userprofile.php"><h3 class="playlist-main-content">Profile</h3></a>
 
                 </div>
                 
@@ -32,12 +32,12 @@
 
                     <div class="playlist-card">
                     <i class="fas fa-list"></i>
-                    <h3 class="playlist-main-content">Play List</h3>
+                    <a href="playlist.php"><h3 class="playlist-main-content">Play List</h3></a>
 
                 </div>
                     <div class="playlist-card">
                         <i class="fas fa-bookmark"></i>
-                        <h3 class="playlist-main-content">Liked Songs</h3>
+                        <a href="like.php"><h3 class="playlist-main-content">Liked Songs</h3></a>
     
                     </div>
                 </div>
@@ -72,6 +72,7 @@
                         <div class="image-data">
                         <h3 class="data 1">
                                 Bipul Cheetri
+                                <button class="button">Follow</button>
                             </h3>
                             <h1 class="data a">
                                Sketches of Darjeeling

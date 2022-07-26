@@ -235,7 +235,7 @@
                         </div>
                         
                         <?php
-                  $sql="SELECT * FROM song  join artist on 	song.artist_id=artist.artist_id ORDER BY view_count DESC LIMIT 0,7";
+                  $sql="SELECT * FROM song  join artist on 	song.artist_id=artist.artist_id ORDER BY view_count DESC LIMIT 7";
                   $result = mysqli_query($conn, $sql);
                   while($row = mysqli_fetch_array($result)){
                  ?>

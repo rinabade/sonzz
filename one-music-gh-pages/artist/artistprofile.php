@@ -123,7 +123,7 @@
                       
                         <form action="profile_handle.php" method="POST" enctype="multipart/form-data">
                              <div class="header">
-                                   Change information
+                                  Change information
                              </div>
                              <hr><br>
                              <div class="element">

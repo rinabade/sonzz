@@ -71,8 +71,7 @@
         <a href="following.php"><b>FOLLOWING</b></a>
         <hr><br><br>
         <div class="info">
-            
-            <div class="Artist">
+        <div class="Artist">
                 <div class="h4">
                     <h4>Artists</h4>
                     
@@ -85,12 +84,11 @@
                           </div>
                           
                       </li>
-                      
+                       
                       
                  </div>
             </div><br><br>
-              
-              </div>
+           </div>
              <br>
               
       </div>

@@ -87,8 +87,7 @@
 
                       <a href="user_profile.php"><b>INFORMATION</b></a>
         <a href="activity.php"><b>Followings</b></a>
-                      <a href="userprofile.php"><b>INFORMATION</b></a>
-        <a href="following.php"><b>FOLLOWING</b></a>
+                     
         <hr><br><br>
         <div class="info">
             

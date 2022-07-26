@@ -71,21 +71,32 @@
         <a href="following.php"><b>FOLLOWING</b></a>
         <hr><br><br>
         <div class="info">
-            
-            <div class="info_data">
-                
-              
-              </div>
+        <div class="Artist">
+                <div class="h4">
+                    <h4>Artists</h4>
+                    
+                 </div>
+                 <div class="artist_song">
+                    <li class="asongItem">
+                        <div class="aimg_play">
+                            <img src="img/artist-img/a2.jpg" alt="">
+                              
+                          </div>
+                          
+                      </li>
+                       
+                      
+                 </div>
+            </div><br><br>
+           </div>
              <br>
               
-                     
-    
-   
       </div>
       </div>
+
     </div>
     </div>
-  </div>
+
   </main>
  
             </div>

@@ -20,7 +20,7 @@
             if($row['email']===$email && $row['password']===$pass){
                 $_SESSION['user_id']=$row['user_id'];
                 $_SESSION['fname']=$row['fname'];
-                header("location:user/mainpage.php ");
+                header("location:user.php ");
                 exit();
             }
         }

@@ -16,8 +16,6 @@
     <script src="js/init-alpine.js"></script>
   </head>
   <body>
-
-    Reeya Tori
     <div
       class="flex h-screen bg-gray-50 dark:bg-gray-900"
       :class="{ 'overflow-hidden': isSideMenuOpen}"

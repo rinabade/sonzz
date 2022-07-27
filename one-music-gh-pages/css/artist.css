@@ -10,11 +10,7 @@ body{
     font-family:'poppins',sans-serif;
     width:100%;
     height: auto;
-<<<<<<< HEAD
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-=======
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
->>>>>>> 2ad2b13033191b432548375e3cfa472a0ae67fcc
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,13 +27,8 @@ header .menu_side, .song_side{
     position: relative;
     width: 20%;
     height: auto;
-<<<<<<< HEAD
     background-color:#243050;
     box-shadow:5px 0px 2px #4a4e58;
-=======
-    background-color:background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
-    box-shadow:5px 0px 2px#5c6783;
->>>>>>> 2ad2b13033191b432548375e3cfa472a0ae67fcc
     color:#fff;
 }
 header .song_side{

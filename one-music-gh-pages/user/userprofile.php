@@ -3,7 +3,7 @@
     $id=$_SESSION['user_id'];
     $fname=$_SESSION['fname'];
     if(isset($_SESSION['user_id']) && isset($_SESSION['fname'])){
-      include_once "connection.php";
+      include_once "../connection.php";
     
 ?>
 
@@ -67,7 +67,7 @@
         <div class="card p-3 py-4">
             <div class="text-center"> 
             <?php 
-                include "connection.php";
+                include "../connection.php";
 
                   $sql="SELECT * FROM user WHERE user_id='$id' ";
                   $result = mysqli_query($conn, $sql);
@@ -84,10 +84,8 @@
                   <hr class="line">
       <div class="wrapper">
         <div class="right">
-
-                      <a href="user_profile.php"><b>INFORMATION</b></a>
-        <a href="activity.php"><b>Followings</b></a>
-                     
+                      <a href="userprofile.php"><b>INFORMATION</b></a>
+        <a href="following.php"><b>FOLLOWINGS</b></a>
         <hr><br><br>
         <div class="info">
             
@@ -137,11 +135,16 @@
                   <div class="popup-close" onclick="closeForm()">×</div>
                     <div class="form">
                       
-                        <form action="profile_handle.php" method="POST">
+                        <form action="profile_handle.php" method="POST" enctype="multipart/form-data">
                              <div class="header">
                                    Change information
                              </div>
                              <hr><br>
+                             <div class="element">
+                                <label for="image"><b>Image</b></label>
+                                <input type="file" name="image">
+                              </div>
+                              
                             <div class="element">
                                <label for="fname"><b>Firstname</b></label>
                                 <input type="text"  placeholder="Firstname" name="fname" id="fname" value="<?php echo $row['fname']; ?>" required="required">
@@ -188,10 +191,24 @@
                        Change Password
                  </div>
                  <hr><br>
-      
+                 <?php
+                 $sql="SELECT * FROM user WHERE user_id='$id' ";
+                  $result = mysqli_query($conn, $sql);
+                  $row = mysqli_fetch_array($result);
+                  if($row['user_id']==$id){
+                    ?>
+                 <div class="element">
+                   <label for="email"><b>Email</b></label>
+                    
+                    <input type="email"  placeholder="" name="email" id="email" value="<?php echo $row['email']; ?>" readonly>
+                    
+                </div>
+                 <?php } ?>
+
                 <div class="element">
                    <label for="cpw"><b>Current Password</b></label>
                     <input type="password"  placeholder="current_password" name="cpw" id="cpw" required="required">
+                    <input type="hidden" value="<?php echo $id;?>" name="id">
                 </div>
       
                 <div class="element">

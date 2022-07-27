@@ -311,6 +311,6 @@
             
         </div>
     </header>
-    <script src="artist.js"></script>
+    <script src="js/artist.js"></script>
 </body>
 <html>

@@ -47,12 +47,12 @@
                 <input type="text" placeholder="Search Music...">
                 </div>
                 <div class="user">
-                    <img src="img/core-img/l.png"> 
+                    <!-- <img src="img/core-img/l.png">  -->
                    </div>
             </nav>
             <div class= "content">
                 <h1>Bipul Chettri</h1>
-                <p>bio</p>
+                <p style="color:Gold">bio</p>
                 <div class="buttons">
                     <button><h4>Followers: 20k</h4></button>
                 </div>
@@ -61,8 +61,8 @@
                 <div class="h4">
                     <h4>Popular songs</h4>
                     <div class="btn_s">
-                    <i  class="bi bi-arrow-left-short left_scroll"></i>
-                    <i  class="bi bi-arrow-right-short right_scroll"></i>
+                    <i class="bi bi-caret-left-square" ></i>
+                    <i class="bi bi-caret-right-square"></i>
                     </div>
                  </div>
                  <div class="pop_song">
@@ -145,8 +145,8 @@
                 <div class="h4">
                     <h4>Popular songs</h4>
                     <div class="btn_s">
-                    <i  class="bi bi-arrow-left-short left_scroll"></i>
-                    <i  class="bi bi-arrow-right-short right_scroll"></i>
+                    <i class="bi bi-caret-left-square" ></i>
+                    <i class="bi bi-caret-right-square"></i>
                     </div>
                  </div>
                  <div class="pop_song">
@@ -228,8 +228,8 @@
                 <div class="h4">
                     <h4>Popular songs</h4>
                     <div class="btn_s">
-                    <i  class="bi bi-arrow-left-short left_scroll"></i>
-                    <i  class="bi bi-arrow-right-short right_scroll"></i>
+                    <i class="bi bi-caret-left-square" ></i>
+                    <i class="bi bi-caret-right-square"></i>
                     </div>
                  </div>
                  <div class="pop_song">

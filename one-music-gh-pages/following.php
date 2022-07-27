@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/b63b22a684.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/userprofile.css">
+    <link rel="stylesheet" href="css/following.css">
 </head>
 <body>
     <div class="main-contaner">
@@ -69,37 +69,43 @@
         <div class="right">
                       <a href="userprofile.php"><b>INFORMATION</b></a>
         <a href="following.php"><b>FOLLOWING</b></a>
-        <hr><br><br>
-        <div class="info">
-        <div class="Artist">
-                <div class="h4">
-                    <h4>Artists</h4>
-                    
-                 </div>
-                 <div class="artist_song">
-                    <li class="asongItem">
-                        <div class="aimg_play">
-                            <img src="img/artist-img/a2.jpg" alt="">
-                              
-                          </div>
-                          
-                      </li>
-                       
-                      
-                 </div>
-            </div><br><br>
-           </div>
-             <br>
-              
-      </div>
-      </div>
+        <hr><br>
+        <div class="playing-songs">
+                     
+                     <div class="playing-songs-container">
+                        <div class="songs-container1">
+                             <div class="icon-music">
+                             <img src="img/artist-img/A1.jpg" class="image-playlist" alt="">
+                             </div> 
+                             <div class="songs-container11">
+                                 <h2 class="songs-text">Bipul chettri</h2>
+                                 <h4 class="songs-details"> </h4>
+                             </div> 
+                        </div>
+                        
+                     </div>
+                     <div class="playing-songs">
+                     
+                     <div class="playing-songs-container">
+                        <div class="songs-container1">
+                             <div class="icon-music">
+                             <img src="img/artist-img/A1.jpg" class="image-playlist" alt="">
+                             </div> 
+                             <div class="songs-container11">
+                                 <h2 class="songs-text">Bipul chettri</h2>
+                                 <h4 class="songs-details"> </h4>
+                             </div> 
+                        </div>
+                        
+                     </div>
+        
 
     </div>
     </div>
 
   </main>
  
-            </div>
+            
              
             
              </div>

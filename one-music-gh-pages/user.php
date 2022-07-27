@@ -78,7 +78,7 @@
                  <div class="pop_song">
                     <li class="songItem">
                         <div class="img_play">
-                            <img src="img/artist-img/a2.jpg" alt="">
+                        <img src="img/artist-img/a2.jpg" alt="">
                             <i class="bi playListPlay bi-play-circle-fill" id="1"></i>  
                           </div>
                           <h5> Moutain High</h5>
@@ -123,34 +123,34 @@
                  <div class="artist_song">
                     <li class="asongItem">
                         <div class="aimg_play">
-                            <img src="img/artist-img/a2.jpg" alt="">
+                        <a href="artist_album.php"><img src="img/artist-img/a2.jpg" alt=""></a>
                               
                           </div>
                           
                       </li>
                       <li class="songItem">
                         <div class="aimg_play">
-                            <img src="img/artist-img/A1.jpg" alt="">
+                        <a href="artist_album.php"><img src="img/artist-img/A1.jpg" alt=""></a>
                             
                           </div>
                       </li>
                       <li class="songItem">
                         <div class="aimg_play">
-                            <img src="img/artist-img/a3.jpg" alt="">
+                        <a href="artist_album.php"><img src="img/artist-img/a3.jpg" alt=""></a>
                             
                           </div>
                           
                       </li>
                       <li class="songItem">
                         <div class="aimg_play">
-                        <a herf="mainpage.php"><img src="img/artist-img/a4.jpg" alt=""></a>
+                        <a href="artist_album.php"><img src="img/artist-img/a4.jpg" alt=""></a>
                              
                           </div>
                           
                       </li>
                       <li class="songItem">
                         <div class="aimg_play">
-                           <a herf="artist_album.php"> <img src="img/artist-img/a5.jpg" alt=""></a> 
+                           <a href="artist_album.php"> <img src="img/artist-img/a5.jpg" alt=""></a> 
                           </div>
                           
                       </li>

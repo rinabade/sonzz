@@ -95,7 +95,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="login-content">
-                        <h3>Login</h3>
+                        <h3 style="color:rgba(237, 242, 245, 0.863);">Login</h3>
                         <!-- Login Form -->
                         <div class="login-form">
                             <form action="login_handle.php" method="POST">
@@ -117,10 +117,10 @@
                                 </div>
                                 
                                 <button type="submit" name="submit" class="btn oneMusic-btn loginbtn mt-30">Login</button> <br><br>
-                                <a href="forgetpass.php"><p> Forgot Password?</p></a><br>    
+                                <a href="forgetpass.php"><p style="color:whitesmoke;"> Forgot Password?</p></a><br>    
                             </form>
                             
-                            <h5 id="emailHelp" class="form-text text-muted"><i class="fa fa-lock mr-2"></i>Not registered? Register now!!!</h5>
+                            <h5  id="emailHelp" class="form-text text-muted" ><i class="fa fa-lock mr-2"></i>Not registered? Register now!!!</h5>
                                 <a href="register.php"> <button type ="submit" class="btn oneMusic-btn loginbtn mt-30" >Register</button> </a>
                         </div>
                     </div>                   

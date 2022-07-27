@@ -97,7 +97,7 @@
                 <div class="col-12 col-lg-8">
                                         
                     <div class="resis-content">
-                        <h1 style="text-align:center;">Register Now</h1><br><br>
+                        <h1 style="text-align:center;color:white;">Register Now</h1><br><br>
                         <!-- Login Form -->
 
                         <div class="login-form">

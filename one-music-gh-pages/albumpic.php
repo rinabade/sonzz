@@ -75,10 +75,15 @@
 					
 					
                         <label>Song</label><br>
-                        <div class="choose"> 
-					 Choose songs<input type="file" name="audio" class="file">
-					
-				   </div><br><br>
+                        
+                        <div class="multi">
+                            <form action="#">
+                        <input class="file-input" type="file" name="file" hidden>
+                        <i class="bi bi-file-earmark-arrow-up"></i>
+                         </form>
+                        <section class="progress-area"></section>
+                        <section class="uploaded-area"></section>
+                       </div>
                    <label>Image</label><br>
                         <div class="choose"> 
 					Choose image<input type="file" name="img" class="file">

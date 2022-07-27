@@ -16,7 +16,7 @@
     <link rel="icon" href="img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="C:\xampp\htdocs\sonzz\one-music-gh-pages\css\style.css">
 
 </head>
 

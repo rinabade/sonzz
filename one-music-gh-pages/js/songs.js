@@ -45,10 +45,10 @@ function uploadFile(name){
                               <i class="fas fa-file-alt"></i>
                               <div class="details">
                                 <span class="name">${name} • Uploaded</span>
-                                <span class="size">${fileSize}</span>
+                                <span class="size"></span>
                               </div>
                             </div>
-                            <i class="fas fa-check"></i>
+                          
                           </li>`;
       uploadedArea.classList.remove("onprogress");
       uploadedArea.insertAdjacentHTML("afterbegin", uploadedHTML);

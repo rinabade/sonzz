@@ -146,8 +146,8 @@
                 <div class="h4">
                     <h4>Popular songs</h4>
                     <div class="btn_s">
-                    <i class="bi bi-caret-left-square" ></i>
-                    <i class="bi bi-caret-right-square"></i>
+                    <i class="bi bi-caret-left-square left_scroll" ></i>
+                    <i class="bi bi-caret-right-square right_scroll"></i>
                     </div>
                  </div>
                  <div class="pop_song">

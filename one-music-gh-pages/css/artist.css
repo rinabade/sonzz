@@ -46,6 +46,7 @@ header .menu_side h1{
     font-size:20px;
     margin:15px 0px 0px 20px;
     font-weight:500;
+    text-shadow: 2px 2px 4px rgb(15, 46, 75);
 }
 header .menu_side .playlist{
     margin:40px 0px 0px 20px;
@@ -173,18 +174,18 @@ header .menu_side .playlist .logout{
     header .song_side nav .user{
         position: relative;
         margin-top: 20px;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
+        width: 50px;
+        line-height: 15px;
+        /* border-radius: 50%; */
         cursor: pointer;
     }
-    header .song_side nav .user img{
+    /* header .song_side nav .user img{
         position: absolute;
         width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        box-shadow: #131312;
-    }
+        height: 150px;
+        border-radius: 50%; 
+         box-shadow: #131312;
+    } */
     header .song_side .content{
         width: 90%;
         height: 30%;
@@ -195,13 +196,18 @@ header .menu_side .playlist .logout{
     header .song_side .content h1{
         font-size: 25px;
         font-weight: 600;
+        text-shadow: 2px 2px 4px rgb(8, 37, 65);
+        letter-spacing: 1px;
+        text-transform:uppercase;
 
     }
     header .song_side .content p{
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 400;
-        color: #4c5262;
+        color: goldenrod;
         margin:5px;
+        text-shadow: 2px 2px 4px grey;
+
     }
 
     header .song_side .content{
@@ -213,35 +219,46 @@ header .menu_side .playlist .logout{
         margin-top:15px;
     }
     header .song_side .content .buttons button{
-        width: 130px;
+        width: 180px;
         height: 30px;
         border: 2px solid #87afeb;
         outline: none;
         border-radius: 20px;
         border: 2px solid #277ceb;
         background:none;
-        color: rgb(215, 241, 233);
-        text-shadow: #b3b378;
+        color: rgb(240, 244, 245);
         cursor: pointer;
         transition: .3s linear;
+        font-size: 16px;
+        text-shadow: 2px 2px 4px rgb(109, 108, 81);
+        background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+        /* text-transform: uppercase; */
     }
     header .song_side .popular_songs{
-        width: 90%;
+        width: 97%;
         height: auto;
         margin: auto;
         margin-top: -5px;
+        box-shadow: 0px 3px 8px 0px rgb(121, 121, 118) ; 
+        border-radius: 10px;
+        border: 1px;
+        /* position: fixed; */
     }
     header .song_side .popular_songs .h4{
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin: auto;
+      padding: 10px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgb(72, 146, 214);
         
     }
     header .song_side .popular_songs .h4 .bi{
        /* background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%); */
        cursor: pointer;
        transition: .3s linear;
-       color:rgba(255, 235, 144, 0.993) !important;
+       color:rgba(250, 205, 6, 0.993) !important;
        
           
       }
@@ -257,6 +274,7 @@ header .menu_side .playlist .logout{
         display: flex;
         overflow-x: auto;
         scroll-behavior: smooth;
+        /* border-radius: 10px; */
       }
       header .song_side .popular_songs .pop_song::-webkit-scrollbar{
       display: none;
@@ -285,7 +303,8 @@ header .menu_side .playlist .logout{
         
        width: 100%;
        height: 100%;
-
+       box-shadow: 2px 3px 8px 2px rgb(105, 105, 104) ;
+       border-radius: 20px;
        }
        header .song_side .popular_songs .pop_song li .img_play .bi{
         position: absolute;
@@ -298,9 +317,13 @@ header .menu_side .playlist .logout{
         opacity: 1;
      }
      header .song_side .popular_songs .pop_song li h5{
-       padding: 5px 0px 0px 5px;
-       line-height:15px;
+       padding: 8px 0px 0px 5px;
+       line-height:25px;
        font-size:10px;
+       font-weight: bold;
+       letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgb(15, 46, 75);
+
      }
 
  

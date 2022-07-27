@@ -34,10 +34,10 @@
                  <h4 class="active"><span></span><a href="songs.php"><i class="bi bi-file-music"></i>Songs</a></h4>
                  <h4 class="active"><span></span><a href="album.php"><i class="bi bi-disc"></i>Albums</a></h4>
         </div>
-        <div class="playlist">
+        <!-- <div class="playlist">
                  <h4 class="active logout"><span></span><i class="bi bi-box-arrow-left"></i>Logout</h4>
                  
-        </div>
+        </div> -->
 
         </div>
         <div class="song_side">
@@ -47,12 +47,13 @@
                 <input type="text" placeholder="Search Music...">
                 </div>
                 <div class="user">
+                  <h4 class="active logout"><span></span><i class="bi bi-box-arrow-right"></i></h4>
                     <!-- <img src="img/core-img/l.png">  -->
                    </div>
             </nav>
             <div class= "content">
                 <h1>Bipul Chettri</h1>
-                <p style="color:Gold">bio</p>
+                <p>bio</p>
                 <div class="buttons">
                     <button><h4>Followers: 20k</h4></button>
                 </div>

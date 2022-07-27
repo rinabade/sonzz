@@ -46,7 +46,7 @@
         <h5 class="yourmusic">Your Music</h5>
         <div class="playlist">
                  <h4 class="active"><span></span><a href="songs.php"><i class="bi bi-file-music"></i>Songs</a></h4>
-                 <h4 class="active"><span></span><i class="bi bi-disc"></i>Albums</h4>
+                 <h4 class="active"><span></span><a href="album.php"><i class="bi bi-disc"></i>Albums</a></h4>
         </div>
         <div class="playlist">
                  <h4 class="active logout"><span></span><i class="bi bi-box-arrow-left"></i>Logout</h4>

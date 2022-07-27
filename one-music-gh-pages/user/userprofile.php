@@ -85,7 +85,7 @@
       <div class="wrapper">
         <div class="right">
                       <a href="userprofile.php"><b>INFORMATION</b></a>
-        <a href="activity.php"><b>Followings</b></a>
+        <a href="following.php"><b>FOLLOWINGS</b></a>
         <hr><br><br>
         <div class="info">
             

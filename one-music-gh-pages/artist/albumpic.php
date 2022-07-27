@@ -45,55 +45,56 @@
         <div class="container d-flex justify-content-center">
             <div class="card p-3 py-4">
                 <div class="text-center"> 
-                    <div class="artist-img">
-                        <img src="img/core-img/pp.jpg" width="100" class="rounded-circle" id="photo"/>
-                        <input type="file" id="file">
-                        <label for="file" id="uploadbtn"><i style="font-size:18px" class="fa">&#xf030;</i></label>
-                    </div>
+
+                <div class="artist-img">
+                <img src="img/core-img/pp.jpg" width="100" class="rounded-circle" id="photo"/>
+                <input type="file" id="file">
+                <label for="file" id="uploadbtn"><i style="font-size:18px" class="fa">&#xf030;</i></label>
+                </div>
                 
                     <h3 class="mt-2"> Aditi Shrestha</h3>
-                    <hr class="line">
-                    <div class="wrapper">
-                        <div class="right">
-                            <a href="artistprofile.php"><b>INFORMATION</b></a>
-                            <a href="activity.php"><b>ACTIVITIES</b></a>
-                            <hr>
-                                <div class="projects">
-                                    <a href="activity.php"><b>Upload song</b></a>
-                                    <a href="#"><b>Upload album</b></a>
+                      <hr class="line">
+        <div class="wrapper">
+        <div class="right">
+                      <a href="artistprofile.php"><b>INFORMATION</b></a>
+        <a href="activity.php"><b>ACTIVITIES</b></a>
+        <br><hr>
+        <div class="projects">
+
+            <a href="songgpic.php"><b>Upload song</b></a>
+            <a href="albumpic.php"><b>Upload album</b></a>
             
-                                </div>
-                            <!-- <br><br> -->
-                        </div>
-                            
-                        <div class="form">
-                            <div class="container1">
-                                <br><br><br>
-                                <label>Album Name :</label> 
-                                <input type="text" placeholder="" name="id"  required><br><br>
-                                
-                                <label>Songs :</label>
-                                    <!-- <div class="choose">  -->
-                                    <input type="file" name="audio" class="file">
-                                    <!-- </div> -->
-                                <br><br> 
-                                <label>Image :</label>
-                                <!-- <div class="choose">  -->
-                                <input type="file" name="img" class="file">
-                                
-                                <!-- </div> -->
-                                <br><br>
-                                <div class="open">
-                                    <button class="button button2"> Upload </button><br><br>
-                                </div>
-                            </div>
-                        </div>
+        </div>
+         </div>
+         <br><br>
+         
+         <div class="form">
+         <div class="container1">
+					<label>Album Name:</label><br>
+					<input type="text" placeholder="" name="id"  required><br><br>
+					
+					
+                        <label>Song</label><br>
+                        <div class="choose"> 
+					 Choose songs<input type="file" name="audio" class="file">
+					
+				   </div><br><br>
+                   <label>Image</label><br>
+                        <div class="choose"> 
+					Choose image<input type="file" name="img" class="file">
+					
+				   </div><br><br>
+                   <div class="open">
+                <button class="button button2"> Upload </button><br><br>
+              </div>
+				</div>
+             </div>
             
         
-        <!-- change -->
+              <!-- change -->
              
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </div>
+</div>
 </header>
 </body>
 </html>

@@ -72,7 +72,6 @@
                             <img src="img/artist-img/A1.jpg" alt="">
                             <i class="bi playListPlay bi-play-circle-fill" id="1"></i>  
                           </div>
-                          fdfbdsh
                           <h5> Moutain High</h5>
                       </li>
                       <li class="songItem">
